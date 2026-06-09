@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 79.93 74.41">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+        font-size: 9.89px;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        letter-spacing: 0em;
+      }
+
+      .cls-4 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-5 {
+        letter-spacing: 0em;
+      }
+
+      .cls-6 {
+        letter-spacing: 0em;
+      }
+
+      .cls-7 {
+        fill: #078c3c;
+        stroke: #0bde5f;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-8 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <g id="txt">
+    <g>
+      <polygon class="cls-7" points="77.23 27.58 65.98 30.57 58.99 36.79 57.66 38.96 58.55 48.52 51.27 50.29 54.16 54.57 50.49 56.74 53.12 63.88 46.05 64.35 34.88 72.02 30.21 70.07 25.66 73.13 21.66 69.24 3.55 57.02 1.05 36.07 13.71 22.57 14.09 17.72 17.55 13.29 29.66 1.35 54.58 22.13 66.94 22.07 77.23 27.58"/>
+      <text class="cls-1" transform="translate(8.72 37.79)"><tspan x="0" y="0">Si</tspan><tspan class="cls-8" x="7.19" y="0">n</tspan><tspan class="cls-2" x="12.64" y="0">t</tspan><tspan class="cls-6" x="15.87" y="0">-</tspan><tspan class="cls-4" x="18.87" y="0">A</tspan><tspan x="24.8" y="0">g</tspan><tspan class="cls-6" x="30.33" y="0">a</tspan><tspan x="35.06" y="0">tha</tspan><tspan class="cls-3" x="0" y="11.87">B</tspan><tspan x="5.4" y="11.87">e</tspan><tspan class="cls-5" x="10.36" y="11.87">r</tspan><tspan x="13.49" y="11.87">chem</tspan></text>
+    </g>
+  </g>
+</svg>

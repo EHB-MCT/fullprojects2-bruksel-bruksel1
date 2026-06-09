@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70.74 51.52">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+        font-size: 11px;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        letter-spacing: 0em;
+      }
+
+      .cls-4 {
+        fill: #078c3c;
+        stroke: #0bde5f;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-5 {
+        letter-spacing: -.01em;
+      }
+    </style>
+  </defs>
+  <g id="txt">
+    <g>
+      <polygon class="cls-4" points="69.09 48.78 62.93 38.23 68.98 33.68 63.62 27.07 62.61 16.49 59.87 13.6 60.11 8.33 45.35 8.89 31.64 3.36 12.24 1.16 14.39 9.51 1.44 23.87 25.69 43.94 37.47 43.94 47.28 48.57 49.13 49.97 49.91 50.49 69.09 48.78"/>
+      <text class="cls-1" transform="translate(10.68 28.87)"><tspan class="cls-2" x="0" y="0">G</tspan><tspan class="cls-3" x="7.19" y="0">ansho</tspan><tspan class="cls-5" x="35.1" y="0">r</tspan><tspan class="cls-3" x="38.59" y="0">en</tspan></text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 154.11 99.15">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: 0em;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        fill: #fff;
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+        font-size: 11px;
+      }
+
+      .cls-4 {
+        letter-spacing: 0em;
+      }
+
+      .cls-5 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-6 {
+        fill: #078c3c;
+        stroke: #0bde5f;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="txt">
+    <g>
+      <path class="cls-6" d="M15.97,57.59l4.11,3.39,4.28-2.84,4.9,2.09,11.19-7.71,6.56-.72,2.41-.2.18-1.62-2.31-6.28,3.8-2.48-2.48-3.47,5.9-1.87-.29-3.83,5.32-2.07,4.33-1.89,12,13.56,13.75-3.94,10.73,4.94-5.93,12.34,5.22,2.72,9.56-1.17,19-10.39-12.76-20.52L134.5,1.64l6.56,8.73s-3.35,13.2-4.48,15.29l16.14,8.6-6.34,10.8,1.47,2.42-19.44,29.67-1.56,7.8-4.61-.44.95-5.14-5.22,5.58-3.33-1.36-5.78,14.39-5.78-1.39-6.28-5.28-13.14-5.97-4.92-.3-1.65-3.77-5.67-.24-9.46-5.83-4.61,1.61-4.06,2.22-5.22,4.17-8.54-2.89-1.92,6.05-9.64-.61-1-6.67-5.5-.61-1.5,1.63-3.23-.08,5.56,14.01-16.94.12-3.47-5.12,3.02-2.72,3.22,3.11,5.56-2.17-4.17-11.72-8-9.61,14.44-8.33Z"/>
+      <text class="cls-3" transform="translate(52.84 59.15)"><tspan x="0" y="0">Si</tspan><tspan class="cls-2" x="8" y="0">n</tspan><tspan class="cls-1" x="14.06" y="0">t</tspan><tspan class="cls-5" x="17.64" y="0">-</tspan><tspan x="20.8" y="0">Jans</tspan><tspan class="cls-4" x="0" y="13.2">M</tspan><tspan x="8.91" y="13.2">olenbeek</tspan></text>
+    </g>
+  </g>
+</svg>

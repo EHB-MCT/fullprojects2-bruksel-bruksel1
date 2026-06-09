@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 106.47 106.89">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+        font-size: 11px;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        fill: #078c3c;
+        stroke: #0bde5f;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="txt">
+    <g>
+      <polygon class="cls-3" points="105.37 84.09 100.63 66.08 103.39 65.52 102.83 61.5 102.83 45.58 100.02 41.06 100.74 35.22 98.59 33.29 98.37 27.01 93.08 26.84 81.84 34.12 75.39 20.29 81.84 14.94 72.8 11.64 76.39 4.14 69.33 1.06 52.64 5.46 45.29 4.36 27.68 15.18 13.89 16.51 1 20.95 1 29.1 7.67 34.43 10.33 42.77 29.44 45.03 42.19 50.43 59.07 49.69 59.07 56.36 61.44 58.73 62.33 69.69 68.61 77.55 62.04 82.23 70.93 96.81 80.7 95.03 87.99 105.25 105.37 84.09"/>
+      <text class="cls-1" transform="translate(46.7 40.18)"><tspan x="0" y="0">Jet</tspan><tspan class="cls-2" x="13.22" y="0">t</tspan><tspan x="16.8" y="0">e</tspan></text>
+    </g>
+  </g>
+</svg>
