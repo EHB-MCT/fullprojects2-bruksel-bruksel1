@@ -1,13 +1,17 @@
 .wrapper {
-	width: 1200px;
-	background-color: blue;
+	width: 100%;
 	margin: 0 auto;
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: repeat(10, minmax(100px, auto));
 	position: relative;
 }
-#grid {
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Nexa", sans-serif;
+}
+/* #grid {
 	position: absolute;
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
@@ -19,16 +23,18 @@
 	margin: 0;
 	opacity: 0.2;
 }
+*/
 
 header {
 	grid-column: 1 / 13;
 	height: 100px;
-	background-color: red;
+	background-color: #08b14c;
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 }
 header img {
-	grid-column: 3/ 5;
+	grid-column: 4/ 5;
+	align-items: center;
 	height: 100px;
 }
 header nav {
@@ -36,12 +42,11 @@ header nav {
 	height: 100px;
 	align-content: center;
 	justify-content: center;
-	background-color: purple;
 }
 
 header nav ul {
 	margin: 0;
-	padding: 0;
+	padding-right: 200px;
 }
 
 header nav ul li {
@@ -51,4 +56,28 @@ header nav ul li {
 header nav ul li a {
 	text-decoration: none;
 	color: #fff;
+}
+header nav ul li a:hover {
+	color: #000;
+}
+header h1 {
+	grid-column: 1 / 13;
+	text-align: center;
+	font-size: 2.5em;
+	color: #08b14c;
+	margin: 0;
+}
+header h2 {
+	grid-column: 1 / 13;
+	text-align: center;
+	font-size: 1.5em;
+	color: #08b14c;
+	margin: 0;
+}
+.header-image {
+	align-self: center;
+	grid-column: 3 / 11;
+	grid-row: 3 / 5;
+	width: 100%;
+	height: 100%;
 }
