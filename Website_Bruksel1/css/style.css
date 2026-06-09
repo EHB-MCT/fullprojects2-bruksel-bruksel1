@@ -29,13 +29,13 @@ header {
 }
 header img {
 	grid-column: 3/ 5;
-
 	height: 100px;
 }
 header nav {
-	grid-column: 5 / 10;
+	grid-column: 5 / 13;
 	height: 100px;
 	align-content: center;
+	justify-content: center;
 	background-color: purple;
 }
 
