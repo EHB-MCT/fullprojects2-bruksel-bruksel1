@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88.93 118.34">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: 0em;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+        font-size: 12px;
+      }
+
+      .cls-3 {
+        letter-spacing: 0em;
+      }
+
+      .cls-4 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-5 {
+        fill: #078c3c;
+        stroke: #0bde5f;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="txt">
+    <g>
+      <path class="cls-5" d="M78.97,105.31l8.82-20.46-12.3-16.7,9.01-16.88-17.48-11.32-7.98-10.21-6.79,3.44L31.19,1.25c-.25.11-.81.39-1.3.59-1.86.76-2.12.97-3.19,1.41,0,0-1.82.63-5.33,2.48-1.02.54-.46.19-3.76,1.97-.59.32-.8.43-1.18.64-.12.06-.5.28-1.05.59-.68.39-1.25.81-1.4.9-2.89,1.59-5.17,2.94-8.65,5.5-1.03.76-2.42,1.88-4.07,3.19,1.59,3.1,3.41,6.3,5,9.4,1.63,3.18,3.26,6.36,4.78,9.31l10.33,32.67c4.05,6.18,7.75,12.68,11.81,18.86,3.4,5.19,7.17,10.06,10.57,15.25,1.49,0,2.98.01,4.47.02l9.43,13.04,21.32-11.73Z"/>
+      <text class="cls-2" transform="translate(34.36 62.07)"><tspan class="cls-3" x="0" y="0">E</tspan><tspan class="cls-4" x="5.82" y="0">v</tspan><tspan x="11.47" y="0">e</tspan><tspan class="cls-1" x="17.48" y="0">r</tspan><tspan x="21.29" y="0">e</tspan></text>
+    </g>
+  </g>
+</svg>

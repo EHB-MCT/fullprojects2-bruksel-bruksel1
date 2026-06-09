@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74.64 45.16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+        font-size: 9px;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        fill: #078c3c;
+        stroke: #0bde5f;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="txt">
+    <g>
+      <polygon class="cls-3" points="44.47 6.06 54.04 4.1 61.97 14.62 73.25 34.11 55.72 43.14 48.01 44.13 44.54 42.37 49.88 29.92 37.52 24.06 35.85 24.17 24.54 27.6 11.75 14.1 7.4 16.25 1.97 18.34 1.08 13.62 2.58 12.17 9.25 6.23 21.97 3.06 41.69 1.06 43.53 4.39 44.47 6.06"/>
+      <text class="cls-1" transform="translate(18.15 17.24) rotate(8.52)"><tspan x="0" y="0">Koekelbe</tspan><tspan class="cls-2" x="34.81" y="0">r</tspan><tspan x="37.68" y="0">g</tspan></text>
+    </g>
+  </g>
+</svg>
