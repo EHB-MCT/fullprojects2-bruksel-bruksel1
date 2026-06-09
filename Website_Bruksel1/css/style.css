@@ -22,26 +22,26 @@
 
 header {
 	grid-column: 1 / 13;
+	height: 100px;
 	background-color: red;
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 }
 header img {
-	grid-column: 2/ 5;
-	background-color: green;
-	height: 25%;
-	align-self: center;
+	grid-column: 3/ 5;
+
+	height: 100px;
 }
 header nav {
-	grid-column: 5 / 13;
+	grid-column: 5 / 10;
+	height: 100px;
+	align-content: center;
 	background-color: purple;
-	align-self: center;
 }
 
 header nav ul {
 	margin: 0;
 	padding: 0;
-	float: right;
 }
 
 header nav ul li {
