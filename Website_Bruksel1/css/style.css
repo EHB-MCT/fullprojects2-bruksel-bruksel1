@@ -1,0 +1,176 @@
+/* Basis instellingen en variabelen */
+:root {
+    --primary-green: #00c853; /* Pas aan naar de exacte hex code van de klant */
+    --text-dark: #333;
+    --bg-light: #fff;
+    --font-main: 'Montserrat', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-main);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Hero Sectie */
+.hero-section {
+    /* Vervang 'afbeelding.jpg' door de juiste foto van de beeldbank */
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('afbeelding.jpg') center/cover;
+    color: white;
+    padding-bottom: 60px;
+}
+
+.navbar {
+    display: flex; /* Flex is hier nog steeds standaard voor simpele nav-balken */
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: var(--primary-green);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero-content {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+/* Titels */
+.section-title {
+    color: var(--primary-green);
+    margin-bottom: 30px;
+}
+
+/* --- HIER BEGINT DE CSS GRID MAGIE --- */
+
+/* Contact Kaarten */
+.contact-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Verdeelt de ruimte in 2 gelijke kolommen */
+    gap: 30px; /* Bepaalt de witruimte tussen de kaarten exact */
+    margin-bottom: 40px;
+}
+
+.card {
+    border: 2px solid var(--primary-green);
+    border-radius: 12px;
+    padding: 40px 20px 20px;
+    position: relative; /* Nog steeds nodig voor de overlappende badge */
+    text-align: left;
+    color: var(--primary-green);
+    font-weight: bold;
+    /* 'width: 45%' is verwijderd, want Grid regelt nu de breedte */
+}
+
+.badge {
+    position: absolute;
+    top: -15px; 
+    left: 20px;
+    background-color: var(--primary-green);
+    color: white;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* Socials */
+.social-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Maakt automatisch 3 gelijke kolommen */
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.btn-social {
+    background-color: var(--primary-green);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    /* 'flex: 1' is verwijderd */
+}
+
+/* Formulier */
+.contact-form-container {
+    background-color: var(--primary-green);
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+}
+
+.contact-form-container h3 {
+    color: white;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+/* Optioneel: Je kunt het formulier zelf ook in een grid zetten als dat in de toekomst complexer wordt */
+form {
+    display: grid;
+    gap: 15px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    font-size: 14px;
+    color: var(--primary-green);
+}
+
+form input::placeholder, form textarea::placeholder {
+    color: #888;
+    font-weight: bold;
+}
+
+form textarea {
+    border-radius: 15px;
+    resize: none;
+}
+
+/* Vacature Banner */
+.job-banner {
+    border: 2px solid var(--primary-green);
+    border-radius: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr auto; /* Kolom 1 pakt alle overgebleven ruimte (1fr), Kolom 2 is exact zo breed als het icoon (auto) */
+    align-items: center; /* Centreert de tekst en het icoon verticaal ten opzichte van elkaar */
+    gap: 20px;
+    text-align: left;
+}
+
+.highlight {
+    color: var(--primary-green);
+}
+
+.btn-small {
+    background-color: var(--primary-green);
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 15px;
+    margin-top: 10px;
+    font-size: 12px;
+}
