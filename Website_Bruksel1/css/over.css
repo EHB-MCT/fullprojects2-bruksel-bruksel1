@@ -32,32 +32,36 @@ header {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 }
-header img {
+.logo-nav {
 	grid-column: 4/ 5;
 	align-items: center;
 	height: 100px;
 }
-header nav {
+.logo-nav img {
+	height: 100px;
+}
+
+.nav-home {
 	grid-column: 5 / 13;
 	height: 100px;
 	align-content: center;
 	justify-content: center;
 }
 
-header nav ul {
+.nav-home ul {
 	margin: 0;
 	padding-right: 200px;
 }
 
-header nav ul li {
+.nav-home ul li {
 	display: inline;
 	padding-left: 10px;
 }
-header nav ul li a {
+.nav-home ul li a {
 	text-decoration: none;
 	color: #fff;
 }
-header nav ul li a:hover {
+.nav-home ul li a:hover {
 	color: #000;
 }
 header h1 {
