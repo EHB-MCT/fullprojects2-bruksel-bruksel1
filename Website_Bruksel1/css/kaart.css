@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.kaart-container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+
+.kaart-brussel {
+  position: relative;
+  width: 800px;  
+  height: 800px;
+}
+
+
+.hulp-basiskaart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.25;
+  pointer-events: none;
+  z-index: 50;
+}
+
+
+
+.gemeente {
+  position: absolute;
+  display: block;
+  z-index: 10;
+}
+
+
+.gemeente img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.gemeente:hover {
+  transform: scale(1.05);
+  z-index: 20;
+  cursor: pointer;
+}
+
+
+.anderlecht {
+  width: 325px;
+  top: 335px;
+  left: 0px;
+}

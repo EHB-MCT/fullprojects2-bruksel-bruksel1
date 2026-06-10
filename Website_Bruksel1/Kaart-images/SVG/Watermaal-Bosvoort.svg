@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 181.28 156.24">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        letter-spacing: .02em;
+      }
+
+      .cls-4 {
+        letter-spacing: 0em;
+      }
+
+      .cls-5 {
+        letter-spacing: 0em;
+      }
+
+      .cls-6 {
+        fill: #fff;
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+        font-size: 11px;
+      }
+
+      .cls-7 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-8 {
+        letter-spacing: 0em;
+      }
+
+      .cls-9 {
+        fill: #078c3c;
+        stroke: #0bde5f;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-10 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <g id="txt">
+    <g>
+      <polygon class="cls-9" points="178.8 92.31 169.43 89.45 158.28 89.12 141.14 82.97 135.44 59.84 119.06 64.83 84.47 39.79 85.66 25.56 83.66 23.53 84.19 19.56 71.21 16.05 62.54 17.71 58.84 9.64 54.21 11.08 50.72 7.2 38.8 11.49 33.95 10.6 34 1.03 27.36 1 19.77 5.75 12.77 6.12 1.68 10.89 12.19 22.54 13.19 23.65 10.98 42.38 12.73 48.73 22 63.95 21.86 75.42 26.63 78.17 28.49 83.28 11.03 94.12 48.48 154.95 94.76 132.6 100.39 138.23 178.8 92.31"/>
+      <text class="cls-6" transform="translate(36.67 101.93) scale(1.13 1)"><tspan class="cls-7" x="0" y="0">W</tspan><tspan class="cls-8" x="8.94" y="0">a</tspan><tspan class="cls-4" x="14.2" y="0">t</tspan><tspan x="17.78" y="0">e</tspan><tspan class="cls-2" x="23.29" y="0">r</tspan><tspan x="26.93" y="0">maal-</tspan><tspan class="cls-10" x="52.68" y="0">B</tspan><tspan class="cls-5" x="58.68" y="0">os</tspan><tspan class="cls-1" x="69.08" y="0">v</tspan><tspan x="74.26" y="0">oo</tspan><tspan class="cls-3" x="86.34" y="0">r</tspan><tspan x="90.2" y="0">t</tspan></text>
+    </g>
+  </g>
+</svg>
