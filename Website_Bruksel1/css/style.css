@@ -9,7 +9,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: Arial, Helvetica, sans-serif, sans-serif;
+	font-family: "Nexa", Helvetica, sans-serif, sans-serif;
 }
 /* #grid {
 	position: absolute;
@@ -93,4 +93,25 @@ h2 {
 	display: grid;
 	background-color: rgb(67, 67, 67);
 	background-blend-mode: overlay;
+}
+
+footer {
+	background-color: #4dc02a;
+	grid-template-columns: repeat(12, 1fr);
+	grid-row: 9/12;
+	grid-column: 1/13;
+}
+.logo-footer {
+	grid-column: 4/7;
+}
+
+.logo-footer img {
+	height: 150px;
+	grid-column: 4/7;
+}
+
+.footer-test {
+	grid-column: 4/11;
+	align-content: right;
+	justify-content: right;
 }
