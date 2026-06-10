@@ -29,4 +29,33 @@
   height: 100%;
   opacity: 0.25;
   pointer-events: none;
+  z-index: 50;
+}
+
+
+
+.gemeente {
+  position: absolute;
+  display: block;
+  z-index: 10;
+}
+
+
+.gemeente img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.gemeente:hover {
+  transform: scale(1.05);
+  z-index: 20;
+  cursor: pointer;
+}
+
+
+.anderlecht {
+  width: 325px;
+  top: 335px;
+  left: 0px;
 }
