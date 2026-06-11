@@ -87,7 +87,7 @@ h2 {
   grid-column: 1 / 13;
   background-image: url(/Website_Bruksel1/images/schaarbeek-station.jpg);
   background-size: cover;
-  background-position: bottom center;
+  background-position: center center;
   height: 50vh;
   align-items: center;
   display: grid;
@@ -228,7 +228,7 @@ footer {
 .contact-page-title {
   font-family: "nexa", sans-serif;
   font-size: 2.5rem;
-  color: #0bde5f;
+  color: #4dc02a;
   text-align: center;
   margin: 0;
 }
@@ -261,7 +261,7 @@ footer {
   place-items: center;
   font-family: "nexa", sans-serif;
   font-size: 1.1rem;
-  color: #0bde5f;
+  color: #4dc02a;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -272,7 +272,7 @@ footer {
 }
 
 .contact-card-social:hover {
-  background-color: #0bde5f;
+  background-color: #4dc02a;
   color: #ffffff;
   transform: translateY(-2px);
 }
@@ -283,7 +283,7 @@ footer {
 
 .contact-card-detail h2 {
   margin-top: 0;
-  color: #0bde5f;
+  color: #4dc02a;
   font-family: "nexa", sans-serif;
   font-size: 1.35rem;
   text-align: left;
@@ -312,7 +312,7 @@ footer {
   margin-bottom: 14px;
   font-family: "nexa", sans-serif;
   font-size: 1rem;
-  color: #0bde5f;
+  color: #4dc02a;
   text-align: left;
 }
 
@@ -330,6 +330,6 @@ footer {
 }
 
 .contact-comment-card textarea:focus {
-  border-color: #0bde5f;
+  border-color: #4dc02a;
   box-shadow: 0 0 0 4px rgba(11, 222, 95, 0.12);
 }
