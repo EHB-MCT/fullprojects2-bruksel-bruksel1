@@ -1,15 +1,15 @@
 .wrapper {
-  width: 100%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(10, minmax(100px, auto));
-  position: relative;
+	width: 100%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: repeat(10, minmax(100px, auto));
+	position: relative;
 }
 body {
-  margin: 0;
-  padding: 0;
-  font-family: "Nexa", Helvetica, sans-serif, sans-serif;
+	margin: 0;
+	padding: 0;
+	font-family: "Nexa", Helvetica, sans-serif, sans-serif;
 }
 /* #grid {
 	position: absolute;
@@ -26,61 +26,61 @@ body {
 */
 
 header {
-  grid-column: 1 / 13;
-  height: 100px;
-  background-color: #4dc02a;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
+	grid-column: 1 / 13;
+	height: 100px;
+	background-color: #4dc02a;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
 }
 .logo-nav {
-  grid-column: 4/ 5;
-  align-items: center;
-  height: 100px;
+	grid-column: 4/ 5;
+	align-items: center;
+	height: 100px;
 }
 .logo-nav img {
-  height: 100px;
+	height: 100px;
 }
 
 .nav-home {
-  grid-column: 5 / 13;
-  height: 100px;
-  align-content: center;
-  justify-content: center;
+	grid-column: 5 / 13;
+	height: 100px;
+	align-content: center;
+	justify-content: center;
 }
 
 .nav-home ul {
-  margin: 0;
-  padding-right: 200px;
+	margin: 0;
+	padding-right: 200px;
 }
 
 .nav-home ul li {
-  display: inline;
-  padding-left: 10px;
+	display: inline;
+	padding-left: 10px;
 }
 .nav-home ul li a {
-  padding: 30px;
-  text-decoration: none;
-  color: #fff;
+	padding: 30px;
+	text-decoration: none;
+	color: #fff;
 }
 .nav-home ul li a:hover {
-  color: #000;
+	color: #000;
 }
 
 h1 {
-  color: #fff;
-  text-align: center;
-  font-size: 42px;
-  margin-top: 20px;
+	color: #fff;
+	text-align: center;
+	font-size: 42px;
+	margin-top: 20px;
 }
 
 h2 {
-  color: #fff;
-  text-align: center;
-  align-items: center;
-  font-size: 18px;
-  margin-top: 10px;
-  padding-left: 250px;
-  padding-right: 250px;
+	color: #fff;
+	text-align: center;
+	align-items: center;
+	font-size: 18px;
+	margin-top: 10px;
+	padding-left: 250px;
+	padding-right: 250px;
 }
 
 .inleiding {
@@ -96,116 +96,116 @@ h2 {
 }
 
 footer {
-  display: grid;
-  background-color: #4dc02a;
-  grid-template-columns: repeat(12, 1fr);
-  grid-row: 9/13;
-  grid-column: 1/13;
+	display: grid;
+	background-color: #4dc02a;
+	grid-template-columns: repeat(12, 1fr);
+	grid-row: 9/13;
+	grid-column: 1/13;
 }
 .logo-footer {
-  grid-column: 2/4;
-  grid-row: 1/3;
-  align-content: center;
-  justify-content: center;
+	grid-column: 2/4;
+	grid-row: 1/3;
+	align-content: center;
+	justify-content: center;
 }
 
 .logo-footer img {
-  height: 200px;
+	height: 200px;
 }
 
 .footer-test {
-  grid-column: 4/11;
+	grid-column: 4/11;
 }
 
 .contact {
-  grid-column: 4/7;
-  align-content: center;
-  justify-content: center;
+	grid-column: 4/7;
+	align-content: center;
+	justify-content: center;
 }
 
 .adres {
-  grid-column: 8/11;
+	grid-column: 8/11;
 }
 
 /*VacatureBox*/
 .infobox-vacature {
-  display: grid;
-  grid-template-columns: 1fr 0.5fr;
-  align-items: center;
-  gap: 30px;
+	display: grid;
+	grid-template-columns: 1fr 0.5fr;
+	align-items: center;
+	gap: 30px;
 
-  background-color: #ffffff;
-  border-radius: 50px;
-  border: 3px solid #4dc02a;
-  margin: 10% auto;
-  max-width: 700px;
-  padding: 40px;
-  padding-bottom: 40px;
-  padding-left: 5%;
+	background-color: #ffffff;
+	border-radius: 50px;
+	border: 3px solid #4dc02a;
+	margin: 10% auto;
+	max-width: 700px;
+	padding: 40px;
+	padding-bottom: 40px;
+	padding-left: 5%;
 }
 
 .infobox-vacature h2 {
-  text-align: left;
-  color: #000;
-  font-family: nexa-light, sans-serif;
-  padding-left: 0px;
-  padding-right: 0px;
+	text-align: left;
+	color: #000;
+	font-family: nexa-light, sans-serif;
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
 .infobox-vacature h3 {
-  font-family: nexa-light, sans-serif;
+	font-family: nexa-light, sans-serif;
 }
 
 .infobox-vacature p {
-  text-align: left;
-  font-family: nexa-light, sans-serif;
-  font-size: 13px;
+	text-align: left;
+	font-family: nexa-light, sans-serif;
+	font-size: 13px;
 }
 
 .button-vacature {
-  border-radius: 25px;
-  border: 3px solid #4dc02a;
-  text-align: center;
-  background-color: #4dc02a;
-  color: #ffffff;
-  width: 150px;
-  cursor: pointer;
-  transition:
-    background-color 0.3s ease,
-    border-color 0.3s ease;
+	border-radius: 25px;
+	border: 3px solid #4dc02a;
+	text-align: center;
+	background-color: #4dc02a;
+	color: #ffffff;
+	width: 150px;
+	cursor: pointer;
+	transition:
+		background-color 0.3s ease,
+		border-color 0.3s ease;
 }
 
 .button-vacature:hover {
-  background-color: #4dc02a;
-  border-color: #4dc02a;
+	background-color: #0bde5f;
+	border-color: #0bde5f;
 }
 
 .teamworkarm img {
-  width: 50%;
-  float: center;
-  padding-top: 10%;
-  padding-bottom: 10%;
-  padding-left: 25%;
+	width: 50%;
+	float: center;
+	padding-top: 10%;
+	padding-bottom: 10%;
+	padding-left: 25%;
 }
 
 /*hover animatie*/
 .teamworkarm:hover {
-  object-fit: cover;
-  transform: scale(1.2) rotate(10deg);
-  transition: transform 0.5s ease;
+	object-fit: cover;
+	transform: scale(1.2) rotate(10deg);
+	transition: transform 0.5s ease;
 }
 
 .leestekens img {
-  width: 50%;
-  float: center;
-  padding-top: 10%;
-  padding-bottom: 10%;
-  padding-left: 40%;
+	width: 50%;
+	float: center;
+	padding-top: 10%;
+	padding-bottom: 10%;
+	padding-left: 40%;
 }
 
 /*hover animatie*/
 .leestekens:hover {
-  object-fit: cover;
-  transform: scale(1.2) rotate(10deg);
-  transition: transform 0.5s ease;
+	object-fit: cover;
+	transform: scale(1.2) rotate(10deg);
+	transition: transform 0.5s ease;
 }
