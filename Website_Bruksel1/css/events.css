@@ -1,9 +1,8 @@
 .wrapper {
   width: 100%;
-  margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(10, minmax(100px, auto));
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(10, minmax(40px, auto));
   position: relative;
 }
 body {
@@ -129,7 +128,7 @@ footer {
 /*main*/
 .search-bar-section {
   width: 100%;
-  padding: 24px 0 8px;
+  padding: 24px 0 24px;
   background-color: #f8f8f8;
 }
 
@@ -374,7 +373,7 @@ footer {
   color: #0ab84a;
 }
 
-h1 {
+.leading-text {
   font-family: "nexa", sans-serif;
   color: #0ab84a;
   font-size: 1.5rem;
