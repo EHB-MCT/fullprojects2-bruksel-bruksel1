@@ -84,15 +84,15 @@ h2 {
 }
 
 .inleiding {
-  grid-column: 1 / 13;
-  background-image: url(/Website_Bruksel1/images/schaarbeek-station.jpg);
-  background-size: cover;
-  background-position: bottom center;
-  height: 50vh;
-  align-items: center;
-  display: grid;
-  background-color: rgb(67, 67, 67);
-  background-blend-mode: overlay;
+	grid-column: 1 / 13;
+	background-image: url(/Website_Bruksel1/images/schaarbeek-station.jpg);
+	background-size: cover;
+	background-position: center center;
+	height: 50vh;
+	align-items: center;
+	display: grid;
+	background-color: rgb(67, 67, 67);
+	background-blend-mode: overlay;
 }
 
 footer {
