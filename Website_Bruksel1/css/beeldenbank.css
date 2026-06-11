@@ -94,6 +94,11 @@ h2 {
 	background-color: rgb(67, 67, 67);
 	background-blend-mode: overlay;
 }
+
+main {
+    grid-column: 1 / 13;
+    width: 100%;
+}
 footer {
 	display: grid;
 	background-color: #4dc02a;

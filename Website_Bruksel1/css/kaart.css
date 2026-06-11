@@ -4,9 +4,14 @@
   box-sizing: border-box;
 }
 
+main {
+  grid-column: 1 / 13;
+  width: 100%;
+}
+
 .kaart-container {
-  width: 100vw;
-  min-height: 100vh;
+  width: 100%;
+  min-height: calc(100vh - 100px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,6 +61,25 @@
 
 .anderlecht {
   width: 325px;
-  top: 335px;
+  top: 334px;
   left: 0px;
 }
+
+.Auderghem {
+  width: 294px;
+  top: 461px;
+  left: 508px;
+}
+
+.brussel {
+  width: 408px;
+  top: 0px;
+  left: 242px;
+}
+
+.elsene {
+  width: 190px;
+  top: 391px;
+  left: 345px;
+}
+
