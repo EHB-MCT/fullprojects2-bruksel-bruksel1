@@ -275,6 +275,11 @@ footer {
   padding: 0 16px;
 }
 
+.recent-events-div {
+  background-color: #4dc02a;
+  padding: 40px;
+}
+
 .recent-events-section {
   margin: 48px auto 24px;
   max-width: 1200px;
