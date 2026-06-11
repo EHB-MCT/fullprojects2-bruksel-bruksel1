@@ -1,9 +1,17 @@
 .wrapper {
+<<<<<<< HEAD
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(10, minmax(60px, auto));
+  position: relative;
+=======
 	width: 100%;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: repeat(10, minmax(60px, auto));
 	position: relative;
+>>>>>>> 6d2163645f87a76c6ab78973b1629c58f8e0c149
 }
 
 body {
