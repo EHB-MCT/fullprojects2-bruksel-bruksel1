@@ -209,3 +209,127 @@ footer {
   transform: scale(1.2) rotate(10deg);
   transition: transform 0.5s ease;
 }
+
+/* Contact page boxes */
+.contact-info-section {
+  display: grid;
+  place-items: center;
+  padding: 60px 24px;
+  background-color: #f4f9f2;
+}
+
+.contact-info-grid {
+  display: grid;
+  gap: 32px;
+  width: 100%;
+  max-width: 1140px;
+}
+
+.contact-page-title {
+  font-family: "nexa", sans-serif;
+  font-size: 2.5rem;
+  color: #0bde5f;
+  text-align: center;
+  margin: 0;
+}
+
+.social-links-grid,
+.contact-detail-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.social-links-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.contact-detail-grid {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.contact-card {
+  background-color: #ffffff;
+  border: 2px solid #c8e8d0;
+  border-radius: 30px;
+  padding: 28px 24px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.contact-card-social {
+  display: grid;
+  place-items: center;
+  font-family: "nexa", sans-serif;
+  font-size: 1.1rem;
+  color: #0bde5f;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+.contact-card-social:hover {
+  background-color: #0bde5f;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.contact-card-detail {
+  text-align: left;
+}
+
+.contact-card-detail h2 {
+  margin-top: 0;
+  color: #0bde5f;
+  font-family: "nexa", sans-serif;
+  font-size: 1.35rem;
+  text-align: left;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.contact-card-detail p {
+  margin: 14px 0 0;
+  line-height: 1.8;
+  color: #333333;
+  font-family: "nexa", sans-serif;
+  text-align: left;
+}
+
+.contact-comment-card {
+  background-color: #ffffff;
+  border: 2px solid #c8e8d0;
+  border-radius: 30px;
+  padding: 28px 24px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.05);
+}
+
+.contact-comment-card label {
+  display: block;
+  margin-bottom: 14px;
+  font-family: "nexa", sans-serif;
+  font-size: 1rem;
+  color: #0bde5f;
+  text-align: left;
+}
+
+.contact-comment-card textarea {
+  width: 100%;
+  min-height: 160px;
+  border: 1px solid #c4c4c4;
+  border-radius: 20px;
+  padding: 16px;
+  font-family: "nexa", sans-serif;
+  font-size: 1rem;
+  color: #333333;
+  resize: vertical;
+  outline: none;
+}
+
+.contact-comment-card textarea:focus {
+  border-color: #0bde5f;
+  box-shadow: 0 0 0 4px rgba(11, 222, 95, 0.12);
+}
