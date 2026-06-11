@@ -96,8 +96,8 @@ h2 {
 }
 
 main {
-    grid-column: 1 / 13;
-    width: 100%;
+	grid-column: 1 / 13;
+	width: 100%;
 }
 footer {
 	display: grid;

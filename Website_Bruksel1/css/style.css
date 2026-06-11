@@ -87,7 +87,7 @@ h2 {
 	grid-column: 1 / 13;
 	background-image: url(/Website_Bruksel1/images/schaarbeek-station.jpg);
 	background-size: cover;
-	background-position: bottom center;
+	background-position: center center;
 	height: 50vh;
 	align-items: center;
 	display: grid;
