@@ -275,6 +275,36 @@ footer {
   padding: 0 16px;
 }
 
+.event-cta-wrap {
+  display: grid;
+  place-items: center;
+  margin-top: 36px;
+}
+
+.button-all-events {
+  display: grid;
+  place-items: center;
+  padding: 20px 56px;
+  min-width: 320px;
+  border-radius: 30px;
+  border: 3px solid #0bde5f;
+  background-color: #ffffff;
+  color: #0bde5f;
+  font-family: "nexa", sans-serif;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.button-all-events:hover {
+  background-color: #0bde5f;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
 .recent-events-div {
   background-color: #4dc02a;
   padding: 40px;
@@ -291,6 +321,10 @@ footer {
   font-size: 1.35rem;
   margin-bottom: 20px;
   text-align: center;
+}
+
+.recent-events-heading {
+  color: #ffffff;
 }
 
 .recent-events-row {
@@ -383,4 +417,8 @@ footer {
   color: #0ab84a;
   font-size: 1.5rem;
   text-align: center;
+}
+
+.leading-text.recent-events-heading {
+  color: #ffffff;
 }
