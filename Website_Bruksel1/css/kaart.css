@@ -10,21 +10,47 @@ main {
 }
 
 .kaart-container {
+  position: relative;
   width: 100%;
   min-height: calc(100vh - 100px);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
+  overflow: hidden;
 }
 
+.kaart-title {
+  position: relative;
+  z-index: 2;
+  margin: 40px 0 16px;
+  color: #4dc02a;
+  font-family: "Nexa", Arial, sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.kaart-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("/Website_Bruksel1/images/grotemarkt.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+  z-index: 1;
+  pointer-events: none;
+}
 
 .kaart-brussel {
   position: relative;
-  width: 800px;  
+  width: 800px;
   height: 800px;
+  padding: 5%;
+  z-index: 2;
 }
-
 
 .hulp-basiskaart {
   position: absolute;
@@ -37,14 +63,11 @@ main {
   z-index: 50;
 }
 
-
-
 .gemeente {
   position: absolute;
   display: block;
   z-index: 10;
 }
-
 
 .gemeente img {
   width: 100%;
@@ -57,7 +80,6 @@ main {
   z-index: 20;
   cursor: pointer;
 }
-
 
 .anderlecht {
   width: 325px;
@@ -82,4 +104,3 @@ main {
   top: 391px;
   left: 345px;
 }
-
