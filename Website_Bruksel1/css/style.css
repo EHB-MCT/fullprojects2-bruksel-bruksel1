@@ -104,6 +104,50 @@ h2 {
 	background-image: url(/Website_Bruksel1/images/auderghem.webp);
 }
 
+.breadcrumb {
+	grid-column: 1 / -1;
+	padding: 18px 100px;
+	background-color: #eef7ea;
+}
+
+.breadcrumb ul {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-family: "nexa", sans-serif;
+	font-size: 0.95rem;
+}
+
+.breadcrumb li {
+	display: flex;
+	align-items: center;
+}
+
+.breadcrumb li + li::before {
+	content: "›";
+	margin: 0 0.5rem;
+	color: #0b8f49;
+}
+
+.breadcrumb a {
+	color: #0b8f49;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+.breadcrumb a:hover,
+.breadcrumb a:focus {
+	text-decoration: underline;
+}
+
+.breadcrumb [aria-current="page"] {
+	color: #333333;
+	font-weight: 600;
+}
+
 .anderlecht-gallery-section {
 	display: grid;
 	grid-template-columns: minmax(240px, 280px) minmax(0, 1fr);
