@@ -2,7 +2,7 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(7, minmax(60px, auto));
+  grid-template-rows: repeat(10, minmax(100px, auto));
   position: relative;
 }
 
