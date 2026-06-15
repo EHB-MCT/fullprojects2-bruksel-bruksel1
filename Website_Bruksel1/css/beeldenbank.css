@@ -95,15 +95,31 @@ h2 {
 }
 
 .intro {
-  grid-column: 1 / 13;
+  grid-column: 1 / -1;
+  width: 100%;
   background-image: url(/Website_Bruksel1/images/schaarbeek-station.jpg);
   background-size: cover;
   background-position: bottom center;
-  height: 50vh;
-  align-items: center;
+  min-height: 50vh;
   display: grid;
+  align-items: center;
+  justify-items: center;
   background-color: rgb(67, 67, 67);
   background-blend-mode: overlay;
+}
+
+.intro .test {
+  width: 100%;
+  max-width: 1200px;
+  padding: 60px 20px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.intro h1,
+.intro h2 {
+  max-width: 1000px;
 }
 
 main {
