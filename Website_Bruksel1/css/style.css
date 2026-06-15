@@ -406,7 +406,6 @@ h2 {
 footer {
 	color: #fff;
 	display: grid;
-	grid-template-columns: minmax(220px, 320px) minmax(240px, 1fr);
 	gap: 32px;
 	align-items: start;
 	padding: 48px 24px;
@@ -428,7 +427,7 @@ footer {
 	gap: 24px;
 	font-weight: 500;
 }
-
+/*
 .contact,
 .adres {
 	margin: 0;
@@ -442,7 +441,8 @@ footer {
 	margin: 0;
 	line-height: 1.8;
 	color: #ffffff;
-}
+} 
+*/
 
 .contact-ons {
 	font-weight: 900;
