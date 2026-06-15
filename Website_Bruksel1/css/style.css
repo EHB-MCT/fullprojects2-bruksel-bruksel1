@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /* Basis instellingen en variabelen */
 :root {
     --primary-green: #00c853; /* Pas aan naar de exacte hex code van de klant */
@@ -175,13 +175,13 @@ form textarea {
     margin-top: 10px;
     font-size: 12px;
 }
-=======
+
 .wrapper {
 	width: 100%;
 	margin: 0 auto;
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: repeat(10, minmax(100px, auto));
+	grid-template-rows: repeat(10, minmax(40px, auto));
 	position: relative;
 }
 body {
@@ -189,6 +189,7 @@ body {
 	padding: 0;
 	font-family: "Nexa", Helvetica, sans-serif, sans-serif;
 }
+
 /* #grid {
 	position: absolute;
 	display: grid;
@@ -237,11 +238,16 @@ header {
 }
 .nav-home ul li a {
 	padding: 30px;
+	font-weight: 900;
 	text-decoration: none;
 	color: #fff;
 }
 .nav-home ul li a:hover {
-	color: #000;
+	color: #0bde5f;
+	transition:
+		background-color 0.5s ease,
+		transform 0.3s ease,
+		color 0.5s ease;
 }
 
 h1 {
@@ -263,9 +269,9 @@ h2 {
 
 .inleiding {
 	grid-column: 1 / 13;
-	background-image: url(/Website_Bruksel1/images/grotemarkt.jpg);
+	background-image: url(/Website_Bruksel1/images/schaarbeek-station.jpg);
 	background-size: cover;
-	background-position: bottom center;
+	background-position: center center;
 	height: 50vh;
 	align-items: center;
 	display: grid;
@@ -273,7 +279,155 @@ h2 {
 	background-blend-mode: overlay;
 }
 
+.inleiding.anderlecht {
+	background-image: url(/Website_Bruksel1/images/anderlecht.jpg);
+}
+
+.inleiding.auderghem {
+	background-image: url(/Website_Bruksel1/images/auderghem.webp);
+}
+
+.breadcrumb {
+	grid-column: 1 / -1;
+	padding: 18px 100px;
+	background-color: #eef7ea;
+}
+
+.breadcrumb ul {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-family: "nexa", sans-serif;
+	font-size: 0.95rem;
+}
+
+.breadcrumb li {
+	display: flex;
+	align-items: center;
+}
+
+.breadcrumb li + li::before {
+	content: "›";
+	margin: 0 0.5rem;
+	color: #0b8f49;
+}
+
+.breadcrumb a {
+	color: #0b8f49;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+.breadcrumb a:hover,
+.breadcrumb a:focus {
+	text-decoration: underline;
+}
+
+.breadcrumb [aria-current="page"] {
+	color: #333333;
+	font-weight: 600;
+}
+
+.anderlecht-gallery-section {
+	display: grid;
+	grid-template-columns: minmax(240px, 280px) minmax(0, 1fr);
+	gap: 32px;
+	padding: 60px 24px;
+	background-color: #f4f9f2;
+	align-items: start;
+}
+
+.gallery-title {
+	grid-column: 1 / -1;
+	font-family: "nexa", sans-serif;
+	color: #0bde5f;
+	font-size: 2.3rem;
+	text-align: left;
+	margin: 0 0 24px;
+	max-width: 100%;
+}
+
+.gallery-filter {
+	display: grid;
+	gap: 14px;
+	align-items: start;
+	justify-content: stretch;
+	margin: 0;
+}
+
+.filter-label {
+	font-family: "nexa", sans-serif;
+	color: #333333;
+	font-size: 1rem;
+	text-align: left;
+	margin: 0;
+}
+
+.year-list {
+	display: grid;
+	gap: 10px;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.year-item {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 12px 18px;
+	border: 1px solid #c4c4c4;
+	border-radius: 999px;
+	background: #ffffff;
+	color: #333333;
+	font-family: "nexa", sans-serif;
+	font-size: 1rem;
+	text-decoration: none;
+	transition:
+		border-color 0.3s ease,
+		background-color 0.3s ease,
+		color 0.3s ease;
+}
+
+.year-item:hover,
+.year-item:focus,
+.year-item.active {
+	border-color: #0bde5f;
+	background-color: #e8f6eb;
+	color: #0b8f49;
+}
+
+.anderlecht-gallery {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 30px;
+	width: 100%;
+	max-width: none;
+	margin: 0;
+}
+
+.anderlecht-gallery img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 28px;
+	box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+	transition:
+		transform 0.35s ease,
+		box-shadow 0.35s ease;
+}
+
+.anderlecht-gallery a:hover img,
+.anderlecht-gallery a:focus img {
+	transform: scale(1.05);
+	box-shadow: 0 22px 55px rgba(0, 0, 0, 0.14);
+}
+
 footer {
+	color: #fff;
 	display: grid;
 	background-color: #4dc02a;
 	grid-template-columns: repeat(12, 1fr);
@@ -292,6 +446,7 @@ footer {
 }
 
 .footer-test {
+	font-weight: 500;
 	grid-column: 4/11;
 }
 
@@ -304,4 +459,217 @@ footer {
 .adres {
 	grid-column: 8/11;
 }
->>>>>>> 014c2e80c8c22eba44dfcb1d3184d79834c1a01f
+
+
+.contact-ons {
+	font-weight: 900;
+	text-align: left;
+}
+
+/*VacatureBox*/
+.infobox-vacature {
+	display: grid;
+	grid-template-columns: 1fr 0.5fr;
+	align-items: center;
+	gap: 30px;
+
+	background-color: #ffffff;
+	border-radius: 50px;
+	border: 3px solid #4dc02a;
+	margin: 10% auto;
+	max-width: 700px;
+	padding: 40px;
+	padding-bottom: 40px;
+	padding-left: 5%;
+}
+
+.infobox-vacature h2 {
+	text-align: left;
+	color: #000;
+	font-family: nexa-light, sans-serif;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.infobox-vacature h3 {
+	font-family: nexa-light, sans-serif;
+}
+
+.infobox-vacature p {
+	text-align: left;
+	font-family: nexa-light, sans-serif;
+	font-size: 13px;
+}
+
+.button-vacature {
+	border-radius: 25px;
+	border: 3px solid #4dc02a;
+	text-align: center;
+	background-color: #4dc02a;
+	color: #ffffff;
+	width: 150px;
+	cursor: pointer;
+	transition:
+		background-color 0.3s ease,
+		border-color 0.3s ease;
+}
+
+.button-vacature:hover {
+	background-color: #4dc02a;
+	border-color: #4dc02a;
+}
+
+.teamworkarm img {
+	width: 50%;
+	float: center;
+	padding-top: 10%;
+	padding-bottom: 10%;
+	padding-left: 25%;
+}
+
+/*hover animatie*/
+.teamworkarm:hover {
+	object-fit: cover;
+	transform: scale(1.2) rotate(10deg);
+	transition: transform 0.5s ease;
+}
+
+.leestekens img {
+	width: 50%;
+	float: center;
+	padding-top: 10%;
+	padding-bottom: 10%;
+	padding-left: 40%;
+}
+
+/*hover animatie*/
+.leestekens:hover {
+	object-fit: cover;
+	transform: scale(1.2) rotate(10deg);
+	transition: transform 0.5s ease;
+}
+
+/* Contact page boxes */
+.contact-info-section {
+	display: grid;
+	place-items: center;
+	padding: 60px 24px;
+	background-color: #f4f9f2;
+}
+
+.contact-info-grid {
+	display: grid;
+	gap: 28px;
+	width: 100%;
+	max-width: 960px;
+}
+
+.contact-page-title {
+	font-family: "nexa", sans-serif;
+	font-size: 2.3rem;
+	color: #4dc02a;
+	text-align: center;
+	margin: 0;
+}
+
+.social-links-grid,
+.contact-detail-grid {
+	display: grid;
+	gap: 20px;
+}
+
+.social-links-grid {
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.contact-detail-grid {
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.contact-card {
+	background-color: #ffffff;
+	border: 2px solid #c8e8d0;
+	border-radius: 30px;
+	padding: 22px 20px;
+	box-shadow: 0 16px 35px rgba(0, 0, 0, 0.05);
+	text-align: center;
+}
+
+.contact-card-social {
+	display: grid;
+	place-items: center;
+	font-family: "nexa", sans-serif;
+	font-size: 1.05rem;
+	color: #4dc02a;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	transition:
+		background-color 0.3s ease,
+		transform 0.3s ease,
+		color 0.3s ease;
+}
+
+.contact-card-social:hover {
+	background-color: #4dc02a;
+	color: #ffffff;
+	transform: translateY(-2px);
+}
+
+.contact-card-detail {
+	text-align: left;
+}
+
+.contact-card-detail h2 {
+	margin-top: 0;
+	color: #4dc02a;
+	font-family: "nexa", sans-serif;
+	font-size: 1.35rem;
+	text-align: left;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.contact-card-detail p {
+	margin: 14px 0 0;
+	line-height: 1.8;
+	color: #333333;
+	font-family: "nexa", sans-serif;
+	text-align: left;
+}
+
+.contact-comment-card {
+	background-color: #ffffff;
+	border: 2px solid #c8e8d0;
+	border-radius: 30px;
+	padding: 28px 24px;
+	box-shadow: 0 20px 45px rgba(0, 0, 0, 0.05);
+}
+
+.contact-comment-card label {
+	display: block;
+	margin-bottom: 14px;
+	font-family: "nexa", sans-serif;
+	font-size: 1rem;
+	color: #4dc02a;
+	text-align: left;
+}
+
+.contact-comment-card textarea {
+	width: 95%;
+	min-height: 160px;
+	border: 1px solid #c4c4c4;
+	border-radius: 20px;
+	padding: 16px;
+	font-family: "nexa", sans-serif;
+	font-size: 1rem;
+	color: #333333;
+	resize: vertical;
+	outline: none;
+}
+
+.contact-comment-card textarea:focus {
+	border-color: #4dc02a;
+	box-shadow: 0 0 0 4px rgba(11, 222, 95, 0.12);
+}
+
