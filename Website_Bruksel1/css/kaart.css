@@ -9,7 +9,7 @@ main {
   width: 100%;
 }
 
-.kaart-container {
+.chart-container {
   position: relative;
   width: 100%;
   min-height: calc(100vh - 100px);
@@ -21,7 +21,7 @@ main {
   overflow: hidden;
 }
 
-.kaart-title {
+.chart-title {
   position: relative;
   z-index: 2;
   margin: 40px 0 16px;
@@ -32,7 +32,7 @@ main {
   text-transform: uppercase;
 }
 
-.kaart-container::before {
+.chart-container::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -44,7 +44,7 @@ main {
   pointer-events: none;
 }
 
-.kaart-brussel {
+.chart-container .chart-brussel {
   position: relative;
   width: 800px;
   height: 800px;
@@ -52,7 +52,7 @@ main {
   z-index: 2;
 }
 
-.hulp-basiskaart {
+.chart-container .help-basis {
   position: absolute;
   top: 0;
   left: 0;
@@ -63,19 +63,19 @@ main {
   z-index: 50;
 }
 
-.gemeente {
+.district {
   position: absolute;
   display: block;
   z-index: 10;
 }
 
-.gemeente img {
+.district img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-.gemeente:hover {
+.district:hover {
   transform: scale(1.05);
   z-index: 20;
   cursor: pointer;
