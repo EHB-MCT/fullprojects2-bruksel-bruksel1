@@ -21,7 +21,11 @@
 	margin: 0 auto;
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
+<<<<<<< HEAD
 	grid-template-rows: repeat(8, minmax(100px, auto));
+=======
+	grid-template-rows: repeat(6, minmax(100px, auto));
+>>>>>>> ae08db5d17d76d654ccd6b30998610c7446ba805
 	position: relative;
 }
 body {
@@ -117,7 +121,7 @@ footer {
 	background-color: #4dc02a;
 	grid-template-columns: repeat(12, 1fr);
 	grid-row: 9/13;
-	grid-column: 1/13;
+	grid-column: 8/13;
 }
 .logo-footer {
 	grid-column: 2/4;
@@ -153,58 +157,70 @@ footer {
 /*VacatureBox*/
 .infobox-vacature {
 	display: grid;
-	grid-template-columns: 1fr 0.5fr;
+	grid-template-columns: 1fr minmax(220px, 280px);
 	align-items: center;
 	gap: 30px;
 	background-color: #ffffff;
-	border-radius: 50px;
-	border: 3px solid #0bde5f;
-	margin: 10% auto;
-	max-width: 700px;
+	border: 2px solid #c8e8d0;
+	border-radius: 30px;
+	box-shadow: 0 16px 35px rgba(0, 0, 0, 0.05);
+	margin: 60px auto;
+	max-width: 960px;
 	padding: 40px;
-	padding-left: 5%;
 }
 
 .infobox-vacature h2 {
+	margin: 0 0 20px;
+	padding: 0;
 	text-align: left;
-	font-family: nexa-light, sans-serif;
-	padding-left: 0px;
+	color: #333333;
+	font-family: "nexa", sans-serif;
+	font-size: 2rem;
+	line-height: 1.05;
 }
 
-.infobox-vacature h3 {
-	font-family: nexa-light, sans-serif;
+.infobox-vacature h2 span {
+	color: #4dc02a;
 }
 
 .infobox-vacature p {
-	text-align: left;
-	font-family: nexa-light, sans-serif;
-	font-size: 13px;
+	margin: 0 0 28px;
+	line-height: 1.8;
+	color: #333333;
+	font-family: "nexa", sans-serif;
+	font-size: 1rem;
 }
 
 .button-vacature {
-	border-radius: 25px;
+	display: grid;
+	place-items: center;
+	padding: 20px 56px;
+	border-radius: 30px;
 	border: 3px solid #0bde5f;
-	text-align: center;
-	background-color: #0bde5f;
-	color: #ffffff;
-	width: 150px;
+	background-color: #ffffff;
+	color: #0bde5f;
+	font-family: "nexa", sans-serif;
+	font-size: 1.1rem;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
 	cursor: pointer;
 	transition:
 		background-color 0.3s ease,
-		border-color 0.3s ease;
+		color 0.3s ease,
+		transform 0.3s ease;
 }
 
 .button-vacature:hover {
-	background-color: #0ab84a;
-	border-color: #0ab84a;
+	background-color: #0bde5f;
+	color: #ffffff;
+	transform: translateY(-2px);
 }
 
 .teamworkarm img {
-	width: 50%;
-	float: center;
-	padding-top: 10%;
-	padding-bottom: 10%;
-	padding-left: 25%;
+	width: 60%;
+	max-width: 280px;
+	display: block;
+	margin: 0 auto;
 }
 
 /*hover animatie*/
