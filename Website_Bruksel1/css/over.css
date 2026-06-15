@@ -269,12 +269,11 @@ footer {
 
 .team-card h3 {
 	color: #0bde5f;
-  font-weight: 900;
+	font-weight: 900;
 	font-size: 24px;
 	margin-top: 0;
 	margin-bottom: 25px;
 	text-transform: uppercase;
-	
 }
 
 .team-card h3.margin-top {
@@ -282,11 +281,10 @@ footer {
 }
 
 .team-card p {
-	color: #000000
+	color: #000000;
 	font-size: 15px;
 	line-height: 1.2;
 	margin: 6px 0;
-	
 }
 
 .team-card:first-child p {
@@ -295,7 +293,6 @@ footer {
 
 .team-card:first-child h3.margin-top ~ p {
 	margin-bottom: 4px;
-	
 }
 
 .gidsen-list {
