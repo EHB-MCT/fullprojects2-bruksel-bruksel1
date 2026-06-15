@@ -3,7 +3,7 @@
 	margin: 0 auto;
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: repeat(10, minmax(100px, auto));
+	grid-template-rows: repeat(6, minmax(100px, auto));
 	position: relative;
 }
 body {
@@ -99,7 +99,7 @@ footer {
 	background-color: #4dc02a;
 	grid-template-columns: repeat(12, 1fr);
 	grid-row: 9/13;
-	grid-column: 1/13;
+	grid-column: 8/13;
 }
 .logo-footer {
 	grid-column: 2/4;

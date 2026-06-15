@@ -411,6 +411,9 @@ footer {
 	padding: 48px 24px;
 	background-color: #4dc02a;
 	width: 100%;
+	grid-template-columns: repeat(12, 1fr);
+	grid-row: 9 / 13;
+	grid-column: 8 / 13;
 }
 .logo-footer {
 	display: grid;
@@ -457,7 +460,7 @@ footer {
 	gap: 30px;
 	background-color: #ffffff;
 	border: 2px solid #c8e8d0;
-	border-radius: 30px;
+	border-radius: 50px;
 	box-shadow: 0 16px 35px rgba(0, 0, 0, 0.05);
 	margin: 60px auto;
 	max-width: 960px;
@@ -490,7 +493,7 @@ footer {
 	display: grid;
 	place-items: center;
 	padding: 20px 56px;
-	border-radius: 30px;
+	border-radius: 50px;
 	border: 3px solid #0bde5f;
 	background-color: #ffffff;
 	color: #0bde5f;
@@ -529,7 +532,8 @@ footer {
 .contact-info-section {
 	display: grid;
 	place-items: center;
-	padding: 60px 24px;
+	padding: 24px;
+	padding-top: 120px;
 	background-color: #f4f9f2;
 }
 
