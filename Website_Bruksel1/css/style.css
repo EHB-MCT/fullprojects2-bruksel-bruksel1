@@ -372,7 +372,7 @@ h2 {
 .year-item:hover,
 .year-item:focus,
 .year-item.active {
-	border-color: #0bde5f;
+	border-color: #0b8f49;
 	background-color: #e8f6eb;
 	color: #0b8f49;
 }
@@ -409,7 +409,7 @@ footer {
 	gap: 32px;
 	align-items: start;
 	padding: 48px 24px;
-	background-color: #4dc02a;
+	background-color: #0bde5f;
 	width: 100%;
 	grid-template-columns: repeat(12, 1fr);
 	grid-row: 9 / 13;
@@ -478,7 +478,7 @@ footer {
 }
 
 .infobox-vacature h2 span {
-	color: #4dc02a;
+	color: #0bde5f;
 }
 
 .infobox-vacature p {
@@ -533,8 +533,7 @@ footer {
 	display: grid;
 	place-items: center;
 	padding: 24px;
-	padding-top: 60px;
-	padding-bottom: 60px;
+	padding-top: 120px;
 	background-color: #f4f9f2;
 }
 
@@ -548,7 +547,7 @@ footer {
 .contact-page-title {
 	font-family: "nexa", sans-serif;
 	font-size: 2.3rem;
-	color: #4dc02a;
+	color: #0bde5f;
 	text-align: center;
 	margin: 0;
 }
