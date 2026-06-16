@@ -141,7 +141,6 @@ footer {
 	justify-content: center;
 }
 
-
 .adres {
 	grid-column: 8/11;
 }
@@ -241,6 +240,41 @@ footer {
 	object-fit: cover;
 	transform: scale(1.2) rotate(10deg);
 	transition: transform 0.5s ease;
+}
+
+.secretariat,
+.Vrienden,
+.gids,
+.bestuur {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 18px 32px;
+	margin-bottom: 40px;
+}
+
+.secretariat > h3,
+.Vrienden > h3,
+.gids > h3,
+.bestuur > h3 {
+	grid-column: 1 / -1;
+	margin-bottom: 16px;
+}
+
+.secretariat p,
+.Vrienden p,
+.gids p,
+.bestuur p {
+	margin: 0 0 10px;
+	line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+	.secretariat,
+	.Vrienden,
+	.gids,
+	.bestuur {
+		grid-template-columns: 1fr;
+	}
 }
 
 .section-title {
