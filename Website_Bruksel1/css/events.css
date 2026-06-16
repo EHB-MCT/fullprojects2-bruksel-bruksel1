@@ -29,7 +29,7 @@ body {
 header {
   grid-column: 1 / 13;
   height: 100px;
-  background-color: #4dc02a;
+  background-color: #078c3c;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
@@ -95,7 +95,7 @@ h2 {
 }
 footer {
   display: grid;
-  background-color: #4dc02a;
+  background-color: #078c3c;
   grid-template-columns: repeat(12, 1fr);
   grid-row: 9/13;
   grid-column: 1/13;
