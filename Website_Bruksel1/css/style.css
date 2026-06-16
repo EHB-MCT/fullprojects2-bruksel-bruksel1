@@ -372,7 +372,7 @@ h2 {
 .year-item:hover,
 .year-item:focus,
 .year-item.active {
-  border-color: #0b8f49
+  border-color: #0b8f49;
   background-color: #e8f6eb;
   color: #0b8f49;
 }
@@ -547,7 +547,7 @@ footer {
 .contact-page-title {
   font-family: "nexa", sans-serif;
   font-size: 2.3rem;
-  color: #0bde5f
+  color: #0bde5f;
   text-align: center;
   margin: 0;
 }
