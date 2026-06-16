@@ -27,11 +27,11 @@ body {
 */
 
 header {
-	grid-column: 1 / 13;
-	height: 100px;
-	background-color: #4dc02a;
-	display: grid;
-	grid-template-columns: repeat(12, 1fr);
+  grid-column: 1 / 13;
+  height: 100px;
+  background-color: #078c3c;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
 }
 .logo-nav {
 	grid-column: 4/ 5;
@@ -94,11 +94,11 @@ h2 {
 	background-blend-mode: overlay;
 }
 footer {
-	display: grid;
-	background-color: #4dc02a;
-	grid-template-columns: repeat(12, 1fr);
-	grid-row: 9/13;
-	grid-column: 1/13;
+  display: grid;
+  background-color: #078c3c;
+  grid-template-columns: repeat(12, 1fr);
+  grid-row: 9/13;
+  grid-column: 1/13;
 }
 .logo-footer {
 	grid-column: 2/4;
