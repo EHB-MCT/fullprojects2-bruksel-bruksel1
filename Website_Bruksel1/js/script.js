@@ -46,7 +46,15 @@ document.addEventListener("DOMContentLoaded", initRandomPhotos);
 
 /*laad fotos per gemeente & jaar*/
 document.addEventListener("DOMContentLoaded", () => {
-  const isSintGillisPage = !!document.querySelector(".inleiding.sint-gillis");
+  const pathname = window.location.pathname.toLowerCase();
+  const breadcrumbCurrent = document.querySelector('.breadcrumb [aria-current="page"]');
+  const currentPageName = breadcrumbCurrent ? breadcrumbCurrent.textContent.trim().toLowerCase() : '';
+  const isSintGillisPage =
+    pathname.includes("sint_gillis.html") ||
+    pathname.includes("sint-gillis.html") ||
+    currentPageName === "sint-gillis" ||
+    currentPageName === "sint gillis";
+
   if (isSintGillisPage) {
     initGemeenteGallery("Sint-Gillis");
   }
