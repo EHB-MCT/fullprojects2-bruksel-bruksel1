@@ -144,18 +144,6 @@ main {
   gap: 24px;
 }
 
-@media (max-width: 960px) {
-  .random-photos-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media (max-width: 640px) {
-  .random-photos-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
 .random-photo-card {
   background-color: #ffffff;
   border-radius: 24px;
@@ -180,7 +168,6 @@ main {
   color: #0b2f10;
 }
 
-/* Gallery pagination controls (prev/next) centered under gallery */
 .gallery-controls {
   width: 100%;
   display: flex;
@@ -213,35 +200,33 @@ main {
   color: #233;
 }
 
-/* More specific rule to ensure controls directly after the gallery are centered */
 .anderlecht-gallery + .gallery-controls,
 .anderlecht-gallery ~ .gallery-controls {
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Ensure buttons keep intended colors even if other rules exist */
 .anderlecht-gallery + .gallery-controls .gallery-prev,
 .anderlecht-gallery + .gallery-controls .gallery-next {
-  background-color: #4dc02a !important;
-  color: #fff !important;
+  background-color: #4dc02a;
+  color: #fff;
 }
 
-/* Ensure controls placed after the entire gallery section are centered across the page */
 .anderlecht-gallery-section + .gallery-controls,
 .anderlecht-gallery-section ~ .gallery-controls {
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-  width: 100% !important;
-  margin-top: 16px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .anderlecht-gallery-section + .gallery-controls .gallery-prev,
 .anderlecht-gallery-section + .gallery-controls .gallery-next {
-  background-color: #4dc02a !important;
-  color: #fff !important;
+  background-color: #4dc02a;
+  color: #fff;
 }
 
 .random-photo-meta p {

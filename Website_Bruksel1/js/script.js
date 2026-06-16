@@ -44,7 +44,7 @@ function initRandomPhotos() {
 
 document.addEventListener("DOMContentLoaded", initRandomPhotos);
 
-/* Beeldenbank: laad en filter foto's per gemeente + jaarrange */
+/*laad fotos per gemeente & jaar*/
 document.addEventListener("DOMContentLoaded", () => {
   const isSintGillisPage = !!document.querySelector(".inleiding.sint-gillis");
   if (isSintGillisPage) {
@@ -68,12 +68,12 @@ async function initGemeenteGallery(gemeenteName) {
     return;
   }
 
-  // filter enkel foto's van de gemeente
+  //filter enkel fotos van de gemeente
   const gemeentePhotos = allPhotos.filter(
     (p) => (p.location || "").toLowerCase() === gemeenteName.toLowerCase(),
   );
 
-  // pagination state
+  //9 fotos per pagina
   const pageSize = 9;
   let currentPage = 0;
   let currentFiltered = gemeentePhotos.slice();
@@ -145,11 +145,11 @@ async function initGemeenteGallery(gemeenteName) {
     }
   }
 
-  // parse text like "2011-2020", "2021 - ...", "... - 1960", or "Alle jaren"
+  // begrijpen van de filters = 1960 - ...
   function parseRange(text) {
     const t = (text || "").trim();
     if (/alle jaren/i.test(t)) return null;
-    // formats: "YYYY - ..." or "... - YYYY" or "YYYY-YYYY"
+
     const parts = t.split("-").map((s) => s.trim());
     if (parts.length === 2) {
       const a = parts[0].replace(/[^0-9]/g, "");
@@ -158,14 +158,14 @@ async function initGemeenteGallery(gemeenteName) {
       const end = b ? parseInt(b, 10) : null;
       return { start, end };
     }
-    // single year
+    // enkel jaartal
     const year = parseInt(t.replace(/[^0-9]/g, ""), 10);
     if (!isNaN(year)) return { start: year, end: year };
     return null;
   }
 
   function inRange(photo, range) {
-    if (!range) return true; // Alle jaren
+    if (!range) return true;
     const year = parseInt(
       (photo.date || "").toString().replace(/[^0-9]/g, ""),
       10,
