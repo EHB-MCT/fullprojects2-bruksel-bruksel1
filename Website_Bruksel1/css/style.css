@@ -220,7 +220,7 @@ header {
   color: #fff;
 }
 .nav-home ul li a:hover {
-  color: #0bde5f;
+  color: #078c3c;
   transition:
     background-color 0.5s ease,
     transform 0.3s ease,
@@ -409,7 +409,7 @@ footer {
   gap: 32px;
   align-items: start;
   padding: 48px 24px;
-  background-color: #0bde5f;
+  background-color: #078c3c;
   width: 100%;
   grid-template-columns: repeat(12, 1fr);
   grid-row: 9 / 13;
@@ -478,7 +478,7 @@ footer {
 }
 
 .infobox-vacature h2 span {
-  color: #0bde5f;
+  color: #078c3c;
 }
 
 .infobox-vacature p {
@@ -494,9 +494,9 @@ footer {
   place-items: center;
   padding: 20px 56px;
   border-radius: 50px;
-  border: 3px solid #0bde5f;
+  border: 3px solid #078c3c;
   background-color: #ffffff;
-  color: #0bde5f;
+  color: #078c3c;
   font-family: "nexa", sans-serif;
   font-size: 1.1rem;
   text-transform: uppercase;
@@ -509,7 +509,7 @@ footer {
 }
 
 .button-vacature:hover {
-  background-color: #0bde5f;
+  background-color: #078c3c;
   color: #ffffff;
   transform: translateY(-2px);
 }

@@ -70,7 +70,7 @@ header {
   color: #fff;
 }
 .nav-home ul li a:hover {
-  color: #0bde5f;
+  color: #078c3c;
   transition:
     background-color 0.5s ease,
     transform 0.3s ease,
@@ -244,7 +244,7 @@ main {
 
 footer {
   display: grid;
-  background-color: #4dc02a;
+  background-color: #078c3c;
   grid-template-columns: repeat(12, 1fr);
   grid-row: 9/13;
   grid-column: 1/13;
