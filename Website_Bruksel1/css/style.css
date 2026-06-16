@@ -220,6 +220,7 @@ header {
 }
 .nav-home ul li a:hover {
   color: #078c3c;
+  border: white;
   transition:
     background-color 0.5s ease,
     transform 0.3s ease,

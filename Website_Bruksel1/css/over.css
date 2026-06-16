@@ -44,7 +44,7 @@ body {
 header {
   grid-column: 1 / 13;
   height: 100px;
-  background-color: #4dc02a;
+  background-color: #078c3c;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
@@ -109,7 +109,7 @@ h2 {
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.4);
   background-blend-mode: overlay;
-  border-bottom: 50px solid #0bde5f;
+  border-bottom: 50px solid #078c3c;
   text-align: center;
   padding: 0 2rem;
 }
