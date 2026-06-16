@@ -141,6 +141,7 @@ footer {
 	justify-content: center;
 }
 
+
 .adres {
 	grid-column: 8/11;
 }
@@ -148,6 +149,7 @@ footer {
 .contact-ons {
 	font-weight: 900;
 	text-align: left;
+	padding-bottom: 20px;
 }
 
 /*VacatureBox*/
