@@ -73,13 +73,58 @@ async function initGemeenteGallery(gemeenteName) {
     (p) => (p.location || "").toLowerCase() === gemeenteName.toLowerCase(),
   );
 
+  // pagination state
+  const pageSize = 9;
+  let currentPage = 0;
+  let currentFiltered = gemeentePhotos.slice();
+
+  // create or reuse controls container
+  let controlsContainer = document.querySelector(".gallery-controls");
+  if (!controlsContainer) {
+    controlsContainer = document.createElement("div");
+    controlsContainer.className = "gallery-controls";
+    controlsContainer.style.display = "flex";
+    controlsContainer.style.gap = "1rem";
+    controlsContainer.style.alignItems = "center";
+    controlsContainer.style.justifyContent = "center";
+    controlsContainer.innerHTML = `
+      <button class="gallery-prev" aria-label="Vorige">←</button>
+      <span class="gallery-pageinfo"></span>
+      <button class="gallery-next" aria-label="Volgende">→</button>
+    `;
+    // insert controls after the whole gallery section when possible so they span the page
+    const gallerySection = gallery.closest(".anderlecht-gallery-section");
+    if (gallerySection && gallerySection.parentNode) {
+      gallerySection.parentNode.insertBefore(
+        controlsContainer,
+        gallerySection.nextSibling,
+      );
+    } else {
+      gallery.parentNode.insertBefore(controlsContainer, gallery.nextSibling);
+    }
+  }
+
+  const btnPrev = controlsContainer.querySelector(".gallery-prev");
+  const btnNext = controlsContainer.querySelector(".gallery-next");
+  const pageInfo = controlsContainer.querySelector(".gallery-pageinfo");
+
   function render(list) {
     if (!list || list.length === 0) {
       gallery.innerHTML =
         '<p class="no-photos">Er zijn geen foto\'s voor deze selectie.</p>';
+      pageInfo.textContent = "";
+      controlsContainer.style.display = "none";
       return;
     }
-    gallery.innerHTML = list
+
+    const total = list.length;
+    const totalPages = Math.ceil(total / pageSize);
+    if (currentPage < 0) currentPage = 0;
+    if (currentPage > totalPages - 1) currentPage = totalPages - 1;
+    const start = currentPage * pageSize;
+    const pageSlice = list.slice(start, start + pageSize);
+
+    gallery.innerHTML = pageSlice
       .map(
         (photo) => `
       <a href="/Website_Bruksel1/html/foto-detail.html" target="_blank" rel="noopener">
@@ -88,6 +133,16 @@ async function initGemeenteGallery(gemeenteName) {
     `,
       )
       .join("");
+
+    if (totalPages > 1) {
+      controlsContainer.style.display = "flex";
+      pageInfo.textContent = `${start + 1} - ${Math.min(start + pageSize, total)} van ${total}`;
+      btnPrev.disabled = currentPage === 0;
+      btnNext.disabled = currentPage >= totalPages - 1;
+    } else {
+      controlsContainer.style.display = "none";
+      pageInfo.textContent = "";
+    }
   }
 
   // parse text like "2011-2020", "2021 - ...", "... - 1960", or "Alle jaren"
@@ -130,11 +185,24 @@ async function initGemeenteGallery(gemeenteName) {
       yearItems.forEach((i) => i.classList.remove("active"));
       item.classList.add("active");
       const range = parseRange(item.textContent || item.innerText || "");
-      const filtered = gemeentePhotos.filter((p) => inRange(p, range));
-      render(filtered);
+      currentFiltered = gemeentePhotos.filter((p) => inRange(p, range));
+      currentPage = 0;
+      render(currentFiltered);
     });
   });
 
+  // attach prev/next handlers
+  btnPrev.addEventListener("click", (e) => {
+    e.preventDefault();
+    currentPage = Math.max(0, currentPage - 1);
+    render(currentFiltered);
+  });
+  btnNext.addEventListener("click", (e) => {
+    e.preventDefault();
+    currentPage = currentPage + 1;
+    render(currentFiltered);
+  });
+
   // initial render: Alle jaren
-  render(gemeentePhotos);
+  render(currentFiltered);
 }
