@@ -401,7 +401,7 @@ footer {
   gap: 32px;
   align-items: start;
   padding: 48px 24px;
-  background-color: #078c3c;
+  background-color: #4dc02a;
   width: 100%;
   grid-template-columns: repeat(12, 1fr);
   grid-row: 9 / 13;
@@ -539,7 +539,7 @@ footer {
 .contact-page-title {
   font-family: "nexa", sans-serif;
   font-size: 2.3rem;
-  color: #0bde5f;
+  color: #078c3c;
   text-align: center;
   margin: 0;
 }
@@ -572,7 +572,7 @@ footer {
   place-items: center;
   font-family: "nexa", sans-serif;
   font-size: 1.05rem;
-  color: #4dc02a;
+  color: #078c3c;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -583,7 +583,7 @@ footer {
 }
 
 .contact-card-social:hover {
-  background-color: #4dc02a;
+  background-color: #078c3c;
   color: #ffffff;
   transform: translateY(-2px);
 }
@@ -594,7 +594,7 @@ footer {
 
 .contact-card-detail h2 {
   margin-top: 0;
-  color: #4dc02a;
+  color: #078c3c;
   font-family: "nexa", sans-serif;
   font-size: 1.35rem;
   text-align: left;
@@ -623,7 +623,7 @@ footer {
   margin-bottom: 14px;
   font-family: "nexa", sans-serif;
   font-size: 1rem;
-  color: #4dc02a;
+  color: #078c3c;
   text-align: left;
 }
 
@@ -641,6 +641,6 @@ footer {
 }
 
 .contact-comment-card textarea:focus {
-  border-color: #4dc02a;
+  border-color: #078c3c;
   box-shadow: 0 0 0 4px rgba(11, 222, 95, 0.12);
 }

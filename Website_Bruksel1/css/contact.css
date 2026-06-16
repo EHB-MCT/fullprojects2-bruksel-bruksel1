@@ -108,7 +108,7 @@ h2 {
 footer {
   color: #fff;
   display: grid;
-  background-color: #078c3c;
+  background-color: #4dc02a;
   grid-template-columns: repeat(12, 1fr);
   grid-row: 9/13;
   grid-column: 1/13;
