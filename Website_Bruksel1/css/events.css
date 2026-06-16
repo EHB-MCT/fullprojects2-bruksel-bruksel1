@@ -340,9 +340,15 @@ footer {
 }
 
 .recent-events-section {
+<<<<<<< HEAD
   margin: 48px auto 24px;
   max-width: 1200px;
   padding: 0 16px;
+=======
+	margin: 120px auto 24px;
+	max-width: 1200px;
+	padding: 0 16px;
+>>>>>>> 4843047b9c90885795639c74ade7dfd94b81ac13
 }
 
 .recent-events-section h2 {
