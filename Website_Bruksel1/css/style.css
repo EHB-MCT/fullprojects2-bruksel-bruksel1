@@ -236,11 +236,17 @@ header {
 }
 
 h1 {
-	color: #fff;
+	color: #0b8f49;
+	background-color: #eef7ea;
+
+	color: #0b8f49;
+	background-color: #eef7ea;
 	text-align: center;
 	font-size: 42px;
-	margin-top: 20px;
-	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-size: 42px;
 	margin-left: auto;
 	margin-right: auto;
 }

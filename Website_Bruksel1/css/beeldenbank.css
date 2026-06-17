@@ -1,236 +1,255 @@
 h1 {
-  color: #fff;
-  text-align: center;
-  font-size: 42px;
-  margin: 20px auto 0;
-  max-width: 1000px;
+	color: #fff;
+	text-align: center;
+	font-size: 42px;
+	margin: 20px auto 0;
+	max-width: 1000px;
 }
 
 h2 {
-  color: #fff;
-  text-align: center;
-  font-size: 18px;
-  margin: 10px auto 0;
-  padding: 0 1.5rem;
-  max-width: 900px;
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+	/*margin: 10px auto 0;*/
+	padding: 0 1.5rem;
+	max-width: 900px;
 }
 
 .intro {
-  grid-column: 1 / 13;
-  background-image: url(/Website_Bruksel1/images/schaarbeek-station.jpg);
-  background-size: cover;
-  background-position: bottom center;
-  height: 50vh;
-  align-items: center;
-  justify-items: center;
-  display: grid;
-  background-color: rgb(67, 67, 67);
-  background-blend-mode: overlay;
+	grid-column: 1 / 13;
+	background-image: url(/Website_Bruksel1/images/schaarbeek-station.jpg);
+	background-size: cover;
+	background-position: bottom center;
+	height: 50vh;
+	align-items: center;
+	justify-items: center;
+	display: grid;
+	background-color: rgb(67, 67, 67);
+	background-blend-mode: overlay;
 }
 
 .intro .test {
-  width: 100%;
-  max-width: 1200px;
-  padding: 60px 20px;
-  display: grid;
-  place-items: center;
-  text-align: center;
+	width: 100%;
+	max-width: 1200px;
+	padding: 60px 20px;
+	display: grid;
+	place-items: center;
+	text-align: center;
 }
 
 .intro h1,
 .intro h2 {
-  max-width: 1000px;
+	max-width: 1000px;
 }
 
 main {
-  grid-column: 1 / 13;
-  width: 100%;
+	grid-column: 1 / 13;
+	width: 100%;
 }
 
 .random-photos {
+	grid-column: 1 / 13;
+	width: 100%;
+	display: grid;
+	gap: 24px;
+	padding: 40px 20px 60px;
+	background-color: #f4f9f2;
+	justify-items: center;
+}
+
+.show-chart {
+	grid-column: 1 / 13;
+	width: 100%;
+	display: grid;
+	gap: 24px;
+	padding: 40px 20px 60px;
+	background-color: #f4f9f2;
+	justify-items: center;
+}
+
+.show-chart {
   grid-column: 1 / 13;
   width: 100%;
   display: grid;
   gap: 24px;
-  padding: 40px 20px 60px;
   background-color: #f4f9f2;
   justify-items: center;
 }
 
 .random-photos-grid {
-  width: 100%;
-  max-width: 1200px;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 24px;
+	width: 100%;
+	max-width: 1200px;
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 24px;
 }
 
 .random-photo-card {
-  background-color: #ffffff;
-  border-radius: 24px;
-  overflow: hidden;
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+	background-color: #ffffff;
+	border-radius: 24px;
+	overflow: hidden;
+	box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
 }
 
 .random-photo-card img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  display: block;
+	width: 100%;
+	height: 220px;
+	object-fit: cover;
+	display: block;
 }
 
 .random-photo-meta {
-  padding: 18px;
+	padding: 18px;
 }
 
 .random-photo-meta h3 {
-  margin: 0 0 10px;
-  font-size: 1rem;
-  color: #0b2f10;
+	margin: 0 0 10px;
+	font-size: 1rem;
+	color: #0b2f10;
 }
 
 .gallery-controls {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  margin-top: 18px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	margin-top: 18px;
 }
 
 .gallery-controls .gallery-prev,
 .gallery-controls .gallery-next {
-  background-color: #4dc02a;
-  color: #fff;
-  border: none;
-  padding: 10px 14px;
-  border-radius: 8px;
-  font-size: 18px;
-  cursor: pointer;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+	background-color: #4dc02a;
+	color: #fff;
+	border: none;
+	padding: 10px 14px;
+	border-radius: 8px;
+	font-size: 18px;
+	cursor: pointer;
+	box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
 }
 
 .gallery-controls .gallery-prev:disabled,
 .gallery-controls .gallery-next:disabled {
-  opacity: 0.45;
-  cursor: default;
+	opacity: 0.45;
+	cursor: default;
 }
 
 .gallery-controls .gallery-pageinfo {
-  font-weight: 700;
-  color: #233;
+	font-weight: 700;
+	color: #233;
 }
 
 .anderlecht-gallery + .gallery-controls,
 .anderlecht-gallery ~ .gallery-controls {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .anderlecht-gallery + .gallery-controls .gallery-prev,
 .anderlecht-gallery + .gallery-controls .gallery-next {
-  background-color: #4dc02a;
-  color: #fff;
+	background-color: #4dc02a;
+	color: #fff;
 }
 
 .anderlecht-gallery-section + .gallery-controls,
 .anderlecht-gallery-section ~ .gallery-controls {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin-top: 16px;
-  margin-bottom: 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin-top: 16px;
+	margin-bottom: 16px;
 }
 
 .anderlecht-gallery-section + .gallery-controls .gallery-prev,
 .anderlecht-gallery-section + .gallery-controls .gallery-next {
-  background-color: #4dc02a;
-  color: #fff;
+	background-color: #4dc02a;
+	color: #fff;
 }
 
 .random-photo-meta p {
-  margin: 0;
-  color: #555555;
-  font-size: 0.95rem;
-  line-height: 1.6;
+	margin: 0;
+	color: #555555;
+	font-size: 0.95rem;
+	line-height: 1.6;
 }
 
 .no-photos {
-  color: #333333;
-  font-size: 1rem;
-  text-align: center;
+	color: #333333;
+	font-size: 1rem;
+	text-align: center;
 }
 
 footer {
-  display: grid;
-  background-color: #078c3c;
-  grid-template-columns: repeat(12, 1fr);
-  grid-row: 9/13;
-  grid-column: 1/13;
+	display: grid;
+	background-color: #078c3c;
+	grid-template-columns: repeat(12, 1fr);
+	grid-row: 9/13;
+	grid-column: 1/13;
 }
 .logo-footer {
-  grid-column: 2/4;
-  grid-row: 1/3;
-  align-content: center;
-  justify-content: center;
+	grid-column: 2/4;
+	grid-row: 1/3;
+	align-content: center;
+	justify-content: center;
 }
 
 .logo-footer img {
-  height: 200px;
+	height: 200px;
 }
 
 .footer-test {
-  grid-column: 4/11;
+	grid-column: 4/11;
 }
 
 .contact {
-  grid-column: 4/7;
-  align-content: center;
-  justify-content: center;
+	grid-column: 4/7;
+	align-content: center;
+	justify-content: center;
 }
 
 .adres {
-  grid-column: 8/11;
+	grid-column: 8/11;
 }
 
 .search-bar-section {
-  width: 100%;
-  padding: 24px 0 24px;
-  background-color: #f8f8f8;
-  display: flex;
-  justify-content: center;
+	width: 100%;
+	padding: 24px 0 24px;
+	background-color: #f8f8f8;
+	display: flex;
+	justify-content: center;
 }
 
 .search-bar {
-  width: 100%;
-  max-width: 640px;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 8px;
-  align-items: center;
+	width: 100%;
+	max-width: 640px;
+	display: grid;
+	grid-template-columns: 1fr auto;
+	gap: 8px;
+	align-items: center;
 }
 
 .search-bar input {
-  flex: 1;
-  min-width: 0;
-  padding: 12px 16px;
-  border: 2px solid #c4c4c4;
-  border-radius: 50px;
-  font-family: "nexa", sans-serif;
-  font-size: 1rem;
-  outline: none;
+	flex: 1;
+	min-width: 0;
+	padding: 12px 16px;
+	border: 2px solid #c4c4c4;
+	border-radius: 50px;
+	font-family: "nexa", sans-serif;
+	font-size: 1rem;
+	outline: none;
 }
 
 .search-bar button {
-  padding: 12px 24px;
-  border: none;
-  border-radius: 50px;
-  background-color: #4dc02a;
-  color: #ffffff;
-  font-family: "nexa", sans-serif;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+	padding: 12px 24px;
+	border: none;
+	border-radius: 50px;
+	background-color: #4dc02a;
+	color: #ffffff;
+	font-family: "nexa", sans-serif;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
 }
