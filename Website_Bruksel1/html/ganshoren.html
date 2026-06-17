@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/Website_Bruksel1/css/style.css" />
-    <link rel="stylesheet" href="/Website_Bruksel1/css/events.css" />
     <link rel="stylesheet" href="/Website_Bruksel1/css/beeldenbank.css" />
+    <link rel="stylesheet" href="/Website_Bruksel1/css/events.css" />
+    <link rel="stylesheet" href="/Website_Bruksel1/css/kaart.css" />
+    <script src="/Website_Bruksel1/js/script.js"></script>
     <link rel="stylesheet" href="https://use.typekit.net/wxj0hxv.css" />
     <link
       rel="icon"
@@ -36,13 +38,14 @@
         <!--
         <section class="intro anderlecht">
           <div class="test">
-            <h1>GANSHOREN</h1>
+            <h1>SINT-GILLIS</h1>
           </div>
         </section>
         -->
 
       </div>
       </header>
+
 
       <nav class="breadcrumb" aria-label="Breadcrumb">
         <ul>
@@ -51,8 +54,440 @@
         </ul>
       </nav>
 
-      <section class="anderlecht-gallery-section">
+
+      <section class="show-chart">
+          <button onclick="location.href='#codeblok'" class="button-vacature">
+            Bekijk de foto's van Ganshoren
+          </button>
+        </section>
+
+
+       <main>
+        <div class="chart-container">
+          <div class="chart-brussel">
+            <!--
+					<img src="../Kaart-images/SVG/BXL.svg" class="hulp-basiskaart" alt="Volledige kaart van Brussel">
+
+					
+					<a href="anderlecht.html" class="gemeente anderlecht">
+						<img src="../Kaart-images/SVG/Anderlecht.svg" alt="Anderlecht">
+					</a>
+
+					<a href="auderghem.html" class="gemeente Auderghem">
+						<img src="../Kaart-images/SVG/Auderghem.svg" alt="Auderghem">
+					</a>
+
+					<a href="brussel.html" class="gemeente brussel">
+						<img src="../Kaart-images/SVG/brussel.svg" alt="brussel">
+					</a>
+
+					<a href="elsene.html" class="gemeente elsene">
+						<img src="../Kaart-images/SVG/Elsene.svg" alt="elsene">
+					</a>
+
+					<a href="etterbeek.html" class="gemeente etterbeek">
+						<img src="../Kaart-images/SVG/Etterbeek.svg" alt="etterbeek">
+					</a>
+
+					<a href="evere.html" class="gemeente evere">
+						<img src="../Kaart-images/SVG/evere.svg" alt="evere">
+					</a>
+
+					<a href="evere.html" class="gemeente evere">
+						<img src="../Kaart-images/SVG/evere.svg" alt="evere">
+					</a>
+					-->
+
+            <?xml version="1.0" encoding="UTF-8"?>
+            <svg
+              id="txt"
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              viewBox="0 0 543.9 542.6"
+            >
+              <!-- Generator: Adobe Illustrator 30.5.1, SVG Export Plug-In . SVG Version: 2.1.4 Build 3)  -->
+              <defs>
+                <style>
+                  .st0 {
+                    font-size: 9px;
+                  }
+
+                  svg text {
+                    pointer-events: none;
+                    font-family:
+                      "Franklin Gothic Medium", "Arial Narrow", Arial,
+                      sans-serif;
+                  }
+
+                  .st0,
+                  .st1,
+                  .st2,
+                  .st3,
+                  .st4 {
+                    font-family: MyriadPro-Regular, "Myriad Pro";
+                  }
+
+                  .st0,
+                  .st1,
+                  .st2,
+                  .st4 {
+                    fill: #fff;
+                  }
+
+                  .st5 {
+                    fill: #987c9b;
+                    stroke: #fbc7ff;
+                  }
+
+                  .st5,
+                  .st6,
+                  .st7,
+                  .st8,
+                  .st9,
+                  .st10,
+                  .st11,
+                  .st12,
+                  .st13 {
+                    stroke-miterlimit: 10;
+                  }
+
+                  .st5,
+                  .st6,
+                  .st8,
+                  .st10,
+                  .st11,
+                  .st12,
+                  .st13 {
+                    stroke-width: 2px;
+                  }
+
+                  .st6 {
+                    stroke: #2d3136;
+                  }
+
+                  .st6,
+                  .st7,
+                  .st8,
+                  .st10,
+                  .st11,
+                  .st13 {
+                    fill: none;
+                  }
+
+                  .st7 {
+                    stroke: #ff0;
+                  }
+
+                  .st1 {
+                    font-size: 11px;
+                  }
+
+                  .st8 {
+                    stroke: #c0d7ff;
+                  }
+
+                  .st2,
+                  .st3 {
+                    font-size: 12px;
+                  }
+
+                  .st9,
+                  .st12 {
+                    fill: #078c3c;
+                    stroke: #0bde5f;
+                  }
+
+                  .st10 {
+                    stroke: #ff933b;
+                  }
+
+                  .st11 {
+                    stroke: #31ff06;
+                  }
+
+                  .st4 {
+                    font-size: 9.9px;
+                  }
+
+                  .st13 {
+                    stroke: #002e54;
+                  }
+
+                  svg polygon,
+                  svg path {
+                    overflow: visible;
+                    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                    transform-origin: center;
+                    transform-box: fill-box;
+                    will-change: transform, filter;
+                    -webkit-font-smoothing: antialiased;
+                  }
+
+                  svg polygon:hover,
+                  svg path:hover {
+                    will-change: filter, transform;
+                    filter: drop-shadow(0 8px 15px rgba(0, 255, 150, 0.7));
+                    transform: scale(1.01) translateY(-3px);
+                    opacity: 1;
+                    fill: #0bde5f;
+                  }
+                </style>
+              </defs>
+
+              <path class="st7" d="M266.8,178.9" />
+              <path class="st11" d="M248.4,342.4" />
+              <path class="st5" d="M285.8,356.3" />
+              <text class="st3" transform="translate(272.5 271.6)">
+                <tspan x="0" y="0"></tspan>
+              </text>
+              <text class="st3" transform="translate(272.5 271.6)">
+                <tspan x="0" y="0"></tspan>
+              </text>
+              <text class="st3" transform="translate(272.5 271.6)">
+                <tspan x="0" y="0"></tspan>
+              </text>
+              <text class="st3" transform="translate(272.5 271.6)">
+                <tspan x="0" y="0"></tspan>
+              </text>
+              <path class="st13" d="M417.8,184.5" />
+              <path class="st10" d="M338.3,137.1" />
+              <path class="st10" d="M327.6,119.2" />
+              <path
+                class="st12"
+                d="M222,266.3l.9,6.5,4.2,18.7,14.6-.3,29.9-20.4,9.3-.9,5.6-4.1,6.8,3,1.5-4.4,7.1,2.4-1.9,6.5,3,4.2-4.2,4.3,5.6.2,8-5.6.4-10.5,28.6,7.6,6.3-15.9s-3.5-13.9-8.2-18.1-16.5-15.4-16.5-15.4l-13.7,6.4-.9,4.4-5.8.2-1.8,3.5-5.4.2-8.2,2.6-2.8-18.1-27.7-17.5,8.6-28.2,5-18.1,3.8-5.2,5.5,6.3,9.6-8.2h5.7c0,0,4.3-13.4,4.3-13.4,3.9-2.9,9.6-8.2,16.6-13.8,7.7-6.2,11-8.2,14.3-10.7,6.4-5.1,16.3-11.6,30.8-17.2l21,31.9,6.7-3.8,8.8,11.5,17.2,11,7-10.6-4.8-7.5,23.3-4.5c-3.6-6.5-8.4-15.2-12-21.8-3.2-6.6-6.4-11.5-10-18,.4-3-.4-4.5,0-7.5l11.6-8.5-8.1-10-9.7-3.5,6.3-5.9-11.6-12.6-10.5-2-1-6.7-11.1-4.2.5-8.4,4.9-8-24.1-7.5-3.7,2.2-6.7-1-9.9,11.1h-16.7s-3.2,18.8-3.2,18.8l-7,11.8-10,6.7-1,10.4-32.3-13.1-36.7-2.4-12.4-2.9s-9.1.4-20.8,4.5c-.6.2-5.1,1.2-9.4,3.3-12.6,6.1-21.9,16.4-27.3,23,5.7-1.6,11.3-3.2,17-4.8l8.8,4.4-3.2,7.4,10.7,3.3-9,7,5.2,10.5,10.8-6.2h7.1c0,0-.3,7.6-.3,7.6l3.1,1.7-.9,5.7,2.9,5.2s-.8,17.8.8,21.4l-2.6.8,3.6,14.8,1.6-1.8c1.4,1.8,2.8,3.8,4.1,5.5,1.3,1.7,2.4,3.4,3.7,5.1-1.5,5.3-2.7,10.4-4.2,15.6l15.4,8-6.6,11.1.7,3.4-18.2,29.7-1.7,8.9h-5.3c0,0-.2,2.7-.2,2.7h5s2.8,12.2,3.7,15.2c1,3,1.5,10.4,1.5,10.4Z"
+              />
+              <path class="st6" d="M355.4,321.7" />
+
+              <a href="ukkel.html">
+                <g>
+                  <polygon
+                    class="st12"
+                    points="356.7 424.2 356.7 423.3 300 413.1 307.3 409.2 305.7 407.6 300.7 407.6 294.9 401.5 292.3 387 295.7 383.2 286.5 375 283.7 360.8 284.3 357.8 281.3 349.3 273.6 354.7 264.8 350.8 257.7 358.5 235.8 359 234.9 361.5 226.8 361.2 225.5 357.8 216 356.2 214.2 356.6 213.7 362 208.1 365 213.3 373.9 211.4 377.5 209.4 381.4 202.8 382.2 198 390.7 193 389.2 193 393.5 184.4 393.6 183.4 399.7 180.7 406.2 178.7 410.3 173.1 410.9 171 413.1 168.2 411.5 158.1 419 169.1 425.4 172.7 438 171.8 443.7 174.8 451.9 173.7 458.1 178.9 462.3 179.9 471.1 199.1 492.2 201.8 499.1 220.5 504.8 229.7 497.3 237.4 498.7 249.7 505.3 259.9 505 271.7 509.9 271 504.6 313.5 519.9 314.4 520.4 315.4 523.4 318.2 522.1 319.8 541.1 383.3 511.5 345.2 449.6 363.3 438.2 361.6 435.4 357 431.9 356.7 424.2"
+                  />
+                  <text class="st1" transform="translate(243.6 448.9)">
+                    <tspan x="0" y="0">Ukkel</tspan>
+                  </text>
+                </g>
+              </a>
+              <a href="anderlecht.html">
+                <g>
+                  <polygon
+                    class="st12"
+                    points="93.3 252.5 91.2 252.5 91.6 263.3 87.4 266.1 91 273.1 78.5 273.9 70.9 269.8 62.7 279.6 40.9 283.9 33.6 280.9 24.3 291.2 27.4 308.9 19.2 322.1 1.2 339.2 4.4 348.2 6.6 348 7.7 341.1 13.8 340.4 17.8 348.9 20.3 347.3 29.8 348.6 36 361.6 37.3 371.7 60 367.5 70.6 367.5 75.7 374.4 75.7 382.1 93.9 385.2 99 380.3 115.3 379.7 122.6 373.7 128.1 364.4 129 363 141.9 365.5 144.4 366.1 148.3 345.3 152.6 342.1 152.6 337.9 158.8 337.9 160.6 334.3 163 334.3 176.4 319.9 178.3 312.6 187.2 302.6 189.6 299.8 191.5 298.6 192.4 297.6 196.6 297.6 199.2 292.7 199.2 289.1 203 286.5 202.3 282.5 204.1 282 204.4 279.4 209.9 273.5 211.5 269.6 216.5 267.5 217.5 265.9 219.8 265.9 219 257.9 218.5 256.2 217.8 252.8 216.7 247.1 215.1 242.7 209.6 242.7 210.2 234.8 207.5 238.6 204.3 237.2 198.4 251.4 191.6 249.9 184.4 244.3 171.6 238.6 166 238.2 164.6 234.2 159.5 234.2 150.5 227.4 146.3 230.4 143.4 230.8 136.9 236.6 128.9 233.3 128.1 239.4 115.4 238.6 114.8 232 110.9 231.8 110.9 233.2 108.4 233.3 112.6 244.8 113.1 246.9 95.5 247.4 93.3 247.4 93.3 252.5"
+                  />
+                  <text class="st1" transform="translate(77 314.5)">
+                    <tspan x="0" y="0">Anderlecht</tspan>
+                  </text>
+                </g>
+              </a>
+              <a href="vorst.html">
+                <g>
+                  <path
+                    class="st12"
+                    d="M233.9,360.2l2.6-9.7-1.7-9.8-24.3-26.1-20.2-12.4-1.3,1.3-9,9.2-2.1,8.1-13.2,14.6-2.9.3-2.6,3.7-5.3-.5v4.2c0,0-3.9,2.7-3.9,2.7l-3.8,21.2-1.3,3s-5.1,7.6-5.3,8.3c-1.7,1.8-3.4,3.7-5.1,5.5l-.2,9.7-2.2,5.1,5.3,8.2.7,8.9c3.3.7,6.7,1.5,10.1,2.3.9.2,2.7.4,4.8.9.1,0,2-.3,2.4-.2.4,0,1.1-.9,1.3-.8l10.8-7.7,3.2,1.6,1.8-2.5,4.6.3,4.4-9.2,1-8.4h8.7c0-.1.4-5.1.4-5.1l5.4,1.9,4.7-7.4h5.6c0,.1,3.6-7.1,3.6-7.1l-5.2-9.3,6.3-2.6.2-7,5.3.4,9,1.2,2,3.8,5.3-.4Z"
+                  />
+                  <text class="st1" transform="translate(166.3 356.7)">
+                    <tspan x="0" y="0">Forest/</tspan>
+                    <tspan x="0" y="13.2">Vorst</tspan>
+                  </text>
+                </g>
+              </a>
+
+              <a href="auderghem.html">
+                <g>
+                  <path
+                    class="st12"
+                    d="M481.7,345.3l-12-12.1h-3.3c0,0-2.2-3.3-2.2-3.3h-10.6c0,0-6.6,9.3-6.6,9.3l-4.2-7.4-9.4-10.7-1.7,1.1-3.9-3.2-1.9,1.1-3.2-3.4-23.7,17.9-7.3-5.3-6.8,1.9-10.9-13.5-5.4-3.3-15.6,4.7-3.4-2.5-2.4,2,1.3,1.5,15.3,15.9s5.7,18.1-10.4,14.2l-2.5,1.2-3.1,4.2,3.6,5.4,5.1-1.2,7.3-4.6h8.7s-.2,9.9-.2,9.9l3.7.6,11.8-4.7,3.8,4.3,4.8-1.8,3.8,8.2,8-1.7,14.8,4.4-.9,4.9,2.2,2.1-1.4,13.6,33,24.2,17.7-5.6,5.9,24,16.7,6.3h11c0,0,10,3.1,10,3.1l24.7-10-22.5-15.6-42-29.3-14.6-9.4,10.7-3.1-9.3-8.8,22.4-18.3-4.9-6.9Z"
+                  />
+                  <text class="st2" transform="translate(396.7 354.2)">
+                    <tspan x="0" y="0">Auderghem</tspan>
+                  </text>
+                </g>
+              </a>
+              <a href="sint_pieters_woluwe.html">
+                <g>
+                  <polygon
+                    class="st12"
+                    points="372.6 271 376.1 271 378.5 273.5 402.3 271.3 428.4 269.6 429.8 265.9 433.2 267.7 433.2 275.4 436.9 275.4 435.1 285.1 445.2 289.3 447.5 285.7 446 281.4 443.5 279.8 447.5 277.1 451.3 272.8 481.7 266.7 474 258.7 467 262.1 464.5 257.5 478.8 253.2 486.5 252.4 486.5 248.5 492.5 246.3 487.2 238.6 497.4 236.1 500.2 245.9 502.2 252.9 507.4 251.8 506.1 264.2 506.2 266.5 509.8 274.1 504.3 282.1 513.4 302.9 522.1 323.2 527.6 336 480.7 342.2 470.4 331.2 467.5 331.2 465.3 327.9 452.6 328 447.1 335.5 442.8 328.6 433.6 318.6 431.5 319.9 428 316.6 425.9 317.8 422.9 314 398.9 332.1 392 327.2 385.6 328.9 374.1 315.5 368.5 312.6 353 317.6 350.7 315.6 381.3 298.6 380.8 287.5 369.9 275.7 372.6 271"
+                  />
+                  <text class="st1" transform="translate(398.6 305.1)">
+                    <tspan x="0" y="0">Sint-Pieters-Woluwe</tspan>
+                  </text>
+                </g>
+              </a>
+
+              <a href="sint_lambrechts_woluwe.html">
+                <g>
+                  <path
+                    class="st12"
+                    d="M424.9,190.2l17,9.5,5-6.1,12.1,6.2-1.6,3.6,5,1.9v6.4c0,0,10.5,6.4,10.5,6.4l23.5,6.2.7,10.2-13.1,3.3,6.1,7.8-5.4,1.8v3.5s-5.7.7-5.7.7l-16.8,5,4.1,8.2,7.6-3.5,4.3,4.5-27.8,5.7-3.2,4.4-5.9,4.2-.2.2,4.2,2.2.5,3-1.3,1.9-7.3-3.2,2.1-10.5h-4s.2-6.9.2-6.9l-6.6-3.2-1.9,4.5-47.5,3.9-3.3-2.5s-2,0-2,0c-.2,0-.3,0-1.3-.1-.4,0-.8-.3-1-.4-3.3-1.2-6.4-2.6-9.7-3.8l-3.4-9.8,24.1-19.3-2.3-4.3h2.6l2.6-6.1-2.8-4.1,3-3.3,23.9-12.6,8-20.5,6.8,5.3Z"
+                  />
+                  <text class="st1" transform="translate(391 236.1)">
+                    <tspan x="0" y="0">Sint-Lambrechts-</tspan>
+                    <tspan x="0" y="13.2">Woluwe</tspan>
+                  </text>
+                </g>
+              </a>
+              <a href="evere.html">
+                <g>
+                  <path
+                    class="st12"
+                    d="M408,203.9l8.8-20.5-12.3-16.7,9-16.9-17.5-11.3-8-10.2-6.8,3.4-21.1-31.9c-.3.1-.8.4-1.3.6-1.9.8-2.1,1-3.2,1.4,0,0-1.8.6-5.3,2.5-1,.5-.5.2-3.8,2-.6.3-.8.4-1.2.6-.1,0-.5.3-1,.6-.7.4-1.3.8-1.4.9-2.9,1.6-5.2,2.9-8.6,5.5-1,.8-2.4,1.9-4.1,3.2,1.6,3.1,3.4,6.3,5,9.4,1.6,3.2,3.3,6.4,4.8,9.3l10.3,32.7c4.1,6.2,7.8,12.7,11.8,18.9,3.4,5.2,7.2,10.1,10.6,15.2,1.5,0,3,0,4.5,0l9.4,13,21.3-11.7Z"
+                  />
+                  <text class="st2" transform="translate(363.4 160.7)">
+                    <tspan x="0" y="0">Evere</tspan>
+                  </text>
+                </g>
+              </a>
+              <a href="etterbeek.html">
+                <g>
+                  <path
+                    class="st12"
+                    d="M380,297.2l-31.8,17.9-2.4,2.6-13.2,11.3-21.8-27.7,5.5-8-7.1-5.8v-7.4c.1,0,4.6-3,4.6-3l.4-9,13.8,3.4,14,4,7.2-17.7-.7-2.4,4.3-2.2,3.5,2.8,1.2.2,3.7,10.1,10.5,3.9-3.3,5.2,11.3,12.4.4,9.7"
+                  />
+                  <text class="st1" transform="translate(322.4 296.6)">
+                    <tspan x="0" y="0">Etterbeek</tspan>
+                  </text>
+                </g>
+              </a>
+              <a href="brussel.html">
+                <g>
+                  <path
+                    class="st12"
+                    d="M222,266.3l.9,6.5,4.2,18.7,14.6-.3,29.9-20.4,9.3-.9,5.6-4.1,6.8,3,1.5-4.4,7.1,2.4-1.9,6.5,3,4.2-4.2,4.3,5.6.2,8-5.6.4-10.5,28.6,7.6,6.3-15.9s-3.5-13.9-8.2-18.1-16.5-15.4-16.5-15.4l-13.7,6.4-.9,4.4-5.8.2-1.8,3.5-5.4.2-8.2,2.6-2.8-18.1-27.7-17.5,8.6-28.2,5-18.1,3.8-5.2,5.5,6.3,9.6-8.2h5.7c0,0,4.3-13.4,4.3-13.4,3.9-2.9,9.6-8.2,16.6-13.8,7.7-6.2,11-8.2,14.3-10.7,6.4-5.1,16.3-11.6,30.8-17.2l21,31.9,6.7-3.8,8.8,11.5,17.2,11,7-10.6-4.8-7.5,23.3-4.5c-3.6-6.5-8.4-15.2-12-21.8-3.2-6.6-6.4-11.5-10-18,.4-3-.4-4.5,0-7.5l11.6-8.5-8.1-10-9.7-3.5,6.3-5.9-11.6-12.6-10.5-2-1-6.7-11.1-4.2.5-8.4,4.9-8-24.1-7.5-3.7,2.2-6.7-1-9.9,11.1h-16.7s-3.2,18.8-3.2,18.8l-7,11.8-10,6.7-1,10.4-32.3-13.1-36.7-2.4-12.4-2.9s-9.1.4-20.8,4.5c-.6.2-5.1,1.2-9.4,3.3-12.6,6.1-21.9,16.4-27.3,23,5.7-1.6,11.3-3.2,17-4.8l8.8,4.4-3.2,7.4,10.7,3.3-9,7,5.2,10.5,10.8-6.2h7.1c0,0-.3,7.6-.3,7.6l3.1,1.7-.9,5.7,2.9,5.2s-.8,17.8.8,21.4l-2.6.8,3.6,14.8,1.6-1.8c1.4,1.8,2.8,3.8,4.1,5.5,1.3,1.7,2.4,3.4,3.7,5.1-1.5,5.3-2.7,10.4-4.2,15.6l15.4,8-6.6,11.1.7,3.4-18.2,29.7-1.7,8.9h-5.3c0,0-.2,2.7-.2,2.7h5s2.8,12.2,3.7,15.2c1,3,1.5,10.4,1.5,10.4Z"
+                  />
+
+                  <text class="st1" transform="translate(248.6 118)">
+                    <tspan x="0" y="0">Brussel</tspan>
+                  </text>
+                </g>
+              </a>
+              <a href="sint_gillis.html">
+                <g>
+                  <path
+                    class="st12"
+                    d="M256,284.9l9,16.1-3,8.9,3.3,9.5-10.7,11-1.2,7.7-9.6-.3-7.5,1.9-11-11-13-14.9-21.6-12.5s.4-.3.4-.3c0,0-.5-.3-.5-.4.1-.2.5-.4.5-.4,0,0,1,0,1.1,0,0,0,.6-.8.9-1,1.4,0,2.9,0,4.4,0l3.2-5.9v-3.2s3.8-2.5,3.8-2.5l-.4-3.9,1.5-.4.3-2.9,5.2-5.9,1.7-3.4,4.9-2.3.8-1.5h1.8l5.5,25.9h16.6s13.1-9.2,13.1-9.2l.5,1.1Z"
+                  />
+                  <text class="st1" transform="translate(213.2 307.8)">
+                    <tspan x="0" y="0">Sint-Gillis</tspan>
+                  </text>
+                </g>
+              </a>
+              <a href="sint_joost_ten_noode.html">
+                <g>
+                  <path
+                    class="st12"
+                    d="M338.6,136.8l9.9,31.7s21.1,34.3,23.6,36h4.2l8.8,11.9-4.8,4.8,3.3,3.8-2,4.8-4.1-.3,2.8,5.6-23.3,19.2h-.4s-.9-.7-.9-.7c-.2-.2-.5-.5-.8-.7-.2,0,0-.1-.5-.4-.1,0-.2-.2-.6-.4-.3-.2-1-.6-1.2-.7,0,0-2.1,1.3-2.1,1.3-.6.4-1.3.7-2,1l-4.9-12.3-20.5-19.4-15.7,7.4-.5,3.8h-5.3c0,0-2.1,3.6-2.1,3.6l-4.6.3-6.6,2.1-2.4-16.8-27.7-16.6,8.8-27.1,4.9-18,2.7-3.3,5.1,5.8,10.5-8.7h6.1c0,0,4.6-13.9,4.6-13.9l14.5-12.4,13.3-9.8c3.3,6.2,6.6,12.4,10,18.6"
+                  />
+                  <text
+                    class="st1"
+                    transform="translate(286.5 169.5) rotate(35.9)"
+                  >
+                    <tspan x="0" y="0">Sint-Joost-ten-Noode</tspan>
+                  </text>
+                </g>
+              </a>
+              <a href="jette.html">
+                <g>
+                  <polygon
+                    class="st12"
+                    points="220.9 154 216.2 136 219 135.4 218.4 131.4 218.4 115.5 215.6 111 216.3 105.1 214.2 103.2 213.9 96.9 208.6 96.8 197.4 104 191 90.2 197.4 84.9 188.4 81.5 192 74.1 184.9 71 168.2 75.4 160.9 74.3 143.2 85.1 129.5 86.4 116.6 90.9 116.6 99 123.2 104.3 125.9 112.7 145 114.9 157.8 120.3 174.6 119.6 174.6 126.3 177 128.6 177.9 139.6 184.2 147.5 177.6 152.1 186.5 166.7 196.3 164.9 203.6 175.2 220.9 154"
+                  />
+                  <text class="st1" transform="translate(162.3 110.1)">
+                    <tspan x="0" y="0">Jette</tspan>
+                  </text>
+                </g>
+              </a>
+              <a href="ganshoren.html">
+                <g>
+                  <polygon
+                    class="st12"
+                    points="181.8 162.3 175.6 151.8 181.7 147.2 176.3 140.6 175.3 130.1 172.6 127.2 172.8 121.9 158 122.4 144.3 116.9 124.9 114.7 127.1 123.1 114.1 137.4 138.4 157.5 150.2 157.5 160 162.1 161.8 163.5 162.6 164.1 181.8 162.3"
+                  />
+                  <text class="st1" transform="translate(123.4 142.4)">
+                    <tspan x="0" y="0">Ganshoren</tspan>
+                  </text>
+                </g>
+              </a>
+              <a href="sint_agatha_berchem.html">
+                <g>
+                  <polygon
+                    class="st12"
+                    points="160.3 164.9 149 167.9 142 174.2 140.7 176.3 141.6 185.9 134.3 187.7 137.2 191.9 133.5 194.1 136.2 201.2 129.1 201.7 117.9 209.4 113.3 207.4 108.7 210.5 104.7 206.6 86.6 194.4 84.1 173.4 96.8 159.9 97.1 155.1 100.6 150.7 112.7 138.7 137.6 159.5 150 159.4 160.3 164.9"
+                  />
+                  <text class="st4" transform="translate(91.8 175.2)">
+                    <tspan x="0" y="0">Sint-Agatha</tspan>
+                    <tspan x="0" y="11.9">Berchem</tspan>
+                  </text>
+                </g>
+              </a>
+              <a href="sint_jans_molenbeek.html">
+                <g>
+                  <path
+                    class="st12"
+                    d="M104.7,208.9l4.1,3.4,4.3-2.8,4.9,2.1,11.2-7.7,6.6-.7,2.4-.2.2-1.6-2.3-6.3,3.8-2.5-2.5-3.5,5.9-1.9-.3-3.8,5.3-2.1,4.3-1.9,12,13.6,13.7-3.9,10.7,4.9-5.9,12.3,5.2,2.7,9.6-1.2,19-10.4-12.8-20.5,19.1-24,6.6,8.7s-3.3,13.2-4.5,15.3l16.1,8.6-6.3,10.8,1.5,2.4-19.4,29.7-1.6,7.8-4.6-.4,1-5.1-5.2,5.6-3.3-1.4-5.8,14.4-5.8-1.4-6.3-5.3-13.1-6-4.9-.3-1.7-3.8-5.7-.2-9.5-5.8-4.6,1.6-4.1,2.2-5.2,4.2-8.5-2.9-1.9,6.1-9.6-.6-1-6.7-5.5-.6-1.5,1.6h-3.2c0,0,5.6,13.9,5.6,13.9h-16.9c0,.1-3.5-5-3.5-5l3-2.7,3.2,3.1,5.6-2.2-4.2-11.7-8-9.6,14.4-8.3Z"
+                  />
+                  <text class="st1" transform="translate(141.6 210.5)">
+                    <tspan x="0" y="0">Sint-Jans</tspan>
+                    <tspan x="0" y="13.2">Molenbeek</tspan>
+                  </text>
+                </g>
+              </a>
+              <a href="koekelberg.html">
+                <g>
+                  <polygon
+                    class="st12"
+                    points="185.7 169.1 195.2 167.1 203.2 177.6 214.4 197.1 196.9 206.1 189.2 207.1 185.7 205.4 191.1 192.9 178.7 187.1 177 187.2 165.7 190.6 152.9 177.1 148.6 179.2 143.2 181.3 142.3 176.6 143.8 175.2 150.4 169.2 163.2 166.1 182.9 164.1 184.7 167.4 185.7 169.1"
+                  />
+                  <text
+                    class="st0"
+                    transform="translate(159.3 180.2) rotate(8.5)"
+                  >
+                    <tspan x="0" y="0">Koekelberg</tspan>
+                  </text>
+                </g>
+              </a>
+
+              <a href="watermaal-bosvoort.html">
+                <g>
+                  <path class="st8" d="M173.8,108.4" />
+                  <path class="st8" d="M138.8,114.9" />
+                  <polygon
+                    class="st9"
+                    points="505.8 445.6 494.7 445.3 477.5 439.1 471.8 416 455.5 421 420.9 395.9 422.1 381.7 420.1 379.7 420.6 375.7 407.6 372.2 398.9 373.9 395.2 365.8 390.6 367.2 387.1 363.4 375.2 367.7 370.4 366.8 370.4 357.2 363.8 357.2 356.2 361.9 349.2 362.3 338.1 367.1 348.6 378.7 349.6 379.8 347.4 398.5 349.1 404.9 358.4 420.1 358.3 431.6 363 434.3 364.9 439.4 347.4 450.3 384.9 511.1 431.2 488.8 436.8 494.4 515.2 448.5 505.8 445.6"
+                  />
+                  <text
+                    class="st1"
+                    transform="translate(373.5 457.6) scale(1.1 1)"
+                  >
+                    <tspan x="0" y="0">Watermaal-Bosvoort</tspan>
+                  </text>
+                </g>
+              </a>
+              <a href="elsene.html">
+                <g>
+                  <path
+                    class="st12"
+                    d="M356.4,422.7l.3-2.2-8.5-13.6-.7-2.2-1.5-6.2,2-17.9-12.2-13.9,13.1-5.7-3.4-5.3,4.3-5.4c1.1-.4,2.3-.8,3.4-1.1,1.1.3,4,1.1,6.8-.5,0,0,.7-.4,1.2-.8,3.6-3.4,1-10.9,1-10.9l-16.3-16.8-13.8,11.6-23.1-29.5,5.2-8.1-6.7-5.3.2-6.6-3.3,2.2-8.7-.9,5.1-5.6-2.4-3.5,1.3-5.9-4.3-1.4-1.6,4.1-7.4-2.4-5.2,3.5-9.5.9-15.3,10.7,2.1,3.5c-.3.9,2.7,4.7,7.5,13.9-.2.3-.4,2.4-.6,2.7-.6.5-.5,1.4-.6,1.5-.2.2-.2,1-.4,1.3-.2.4-.3,1.4-.5,1.8l-.8,2,3.4,10-10.9,11.1c-.5,2.9-.9,5.7-1.4,8.6-3.4.2-7-.5-10.4-.2-2.8.2-5.4,1.3-7.6,1.7.3.9.5,1.7.6,2.5.3,1.5,0,2.1.3,2.7.4,1.2.2,2.2.7,3.3.2.4.5.7.9,1.2v.8c-.3-.3-.5-.5-.8-.7,0,0-1,2.8-1,2.9,0,0-1,1.8-.5,2.8v.6c-.1,0,5.4-.2,5.4-.2l14.6-.3,7.4-8.1,9,4,8.9-6.2,2.6,7.7.8,5c-.2.8,0,2-.3,2.2,0,0,.5,1.9.5,1.9,0,0,2.3,10.8,2.3,10.9,3.3,3,6.9,6.2,10.2,9.2l-4.1,4.5,2.5,13,4.7,5h5.2c0,0,3.6,4.3,3.6,4.3l-4.7,2.5,51.1,9.6ZM263.5,292.9l.5.6h0c-.2-.2-.4-.4-.5-.6Z"
+                  />
+                  <text class="st1" transform="translate(294.1 342.2)">
+                    <tspan x="0" y="0">Elsene</tspan>
+                  </text>
+                </g>
+              </a>
+            </svg>
+          </div>
+        </div>
+
+      </main>
+
+
+      
+
+      <h1 id="codeblok">Foto's van Ganshoren</h1>
+      <section  class="anderlecht-gallery-section">
         <div class="gallery-filter">
+          
           <p class="filter-label">Filter op jaartal</p>
           <ul class="year-list" aria-label="Filter op jaartal">
             <li><a href="#" class="year-item active">Alle jaren</a></li>
@@ -66,74 +501,80 @@
             <li><a href="#" class="year-item">1951-1960</a></li>
           </ul>
         </div>
+      
+      
+      
+
+
 
         <div class="anderlecht-gallery">
           <a href="/Website_Bruksel1/html/foto-detail.html" target="_blank" rel="noopener">
             <img
               src="/Website_Bruksel1/images/anderlecht.jpg"
-              alt="Ganshoren foto 1"
+              alt="Sint-Gillis foto 1"
             />
           </a>
           <a href="/Website_Bruksel1/html/foto-detail.html" target="_blank" rel="noopener">
             <img
               src="/Website_Bruksel1/images/anderlecht.jpg"
-              alt="Ganshoren foto 2"
+              alt="Sint-Gillis foto 2"
             />
           </a>
           <a href="/Website_Bruksel1/html/foto-detail.html" target="_blank" rel="noopener">
             <img
               src="/Website_Bruksel1/images/anderlecht.jpg"
-              alt="Ganshoren foto 3"
+              alt="Sint-Gillis foto 3"
             />
           </a>
           <a href="/Website_Bruksel1/html/foto-detail.html" target="_blank" rel="noopener">
             <img
               src="/Website_Bruksel1/images/anderlecht.jpg"
-              alt="Ganshoren foto 4"
+              alt="Sint-Gillis foto 4"
             />
           </a>
           <a href="/Website_Bruksel1/html/foto-detail.html" target="_blank" rel="noopener">
             <img
               src="/Website_Bruksel1/images/anderlecht.jpg"
-              alt="Ganshoren foto 5"
+              alt="Sint-Gillis foto 5"
             />
           </a>
           <a href="/Website_Bruksel1/html/foto-detail.html" target="_blank" rel="noopener">
             <img
               src="/Website_Bruksel1/images/anderlecht.jpg"
-              alt="Ganshoren foto 6"
+              alt="Sint-Gillis foto 6"
             />
           </a>
           <a href="/Website_Bruksel1/html/foto-detail.html" target="_blank" rel="noopener">
             <img
               src="/Website_Bruksel1/images/anderlecht.jpg"
-              alt="Ganshoren foto 7"
+              alt="Sint-Gillis foto 7"
             />
           </a>
           <a href="/Website_Bruksel1/html/foto-detail.html" target="_blank" rel="noopener">
             <img
               src="/Website_Bruksel1/images/anderlecht.jpg"
-              alt="Ganshoren foto 8"
+              alt="Sint-Gillis foto 8"
             />
           </a>
           <a href="/Website_Bruksel1/html/foto-detail.html" target="_blank" rel="noopener">
             <img
               src="/Website_Bruksel1/images/anderlecht.jpg"
-              alt="Ganshoren foto 9"
+              alt="Sint-Gillis foto 9"
             />
           </a>
         </div>
       </section>
-      <main></main>
     </div>
 
 
-    <section class="random-photos">
+            <section class="random-photos">
           <button id="load-random-photos" class="button-vacature">
             Toon 6 willekeurige foto's
           </button>
           <div id="random-photos-grid" class="random-photos-grid"></div>
         </section>
+
+
 
 
     <footer class="footer">
