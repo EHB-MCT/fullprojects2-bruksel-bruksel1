@@ -1,105 +1,99 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
 main {
-	grid-column: 1 / 13;
-	width: 100%;
+  grid-column: 1 / 13;
+  width: 100%;
 }
 
 .chart-container {
-	position: relative;
-	width: 100%;
-	min-height: calc(100vh - 100px);
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	background-color: #f4f9f2;
-	overflow: hidden;
+  position: relative;
+  width: 100%;
+  min-height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f9f2;
+  overflow: hidden;
 }
 
 .chart-title {
-	position: relative;
-	z-index: 2;
-	margin: 40px 0 16px;
-	color: #4dc02a;
-	font-family: "Nexa", Arial, sans-serif;
-	font-size: 2rem;
-	text-align: center;
-	text-transform: uppercase;
+  position: relative;
+  z-index: 2;
+  margin: 40px 0 16px;
+  color: #4dc02a;
+  font-family: "Nexa", Arial, sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .chart-container::before {
-	content: "";
-	position: absolute;
-	inset: 0;
-	background-color: #f4f9f2;
-	background-size: cover;
-	background-position: center;
-	z-index: 1;
-	pointer-events: none;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #f4f9f2;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  pointer-events: none;
 }
 
 .chart-container .chart-brussel {
-	position: relative;
-	width: 670px;
-	height: 610px;
-	padding: 5%;
-	z-index: 2;
+  position: relative;
+  width: 670px;
+  height: 610px;
+  padding: 5%;
+  z-index: 2;
 }
 
 .chart-container .help-basis {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	opacity: 0.25;
-	pointer-events: none;
-	z-index: 50;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.25;
+  pointer-events: none;
+  z-index: 50;
 }
 
 .district {
-	position: absolute;
-	display: block;
-	z-index: 10;
+  position: absolute;
+  display: block;
+  z-index: 10;
 }
 
 .district img {
-	width: 100%;
-	height: auto;
-	display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .district:hover {
-	transform: scale(1.05);
-	z-index: 20;
-	cursor: pointer;
+  transform: scale(1.05);
+  z-index: 20;
+  cursor: pointer;
 }
 
 .anderlecht {
-	width: 325px;
-	top: 334px;
-	left: 0px;
+  width: 325px;
+  top: 334px;
+  left: 0px;
 }
 
 .Auderghem {
-	width: 294px;
-	top: 461px;
-	left: 508px;
+  width: 294px;
+  top: 461px;
+  left: 508px;
 }
 
 .brussel {
-	width: 408px;
-	top: 0px;
-	left: 242px;
+  width: 408px;
+  top: 0px;
+  left: 242px;
 }
 
 .elsene {
-	width: 190px;
-	top: 391px;
-	left: 345px;
+  width: 190px;
+  top: 391px;
+  left: 345px;
 }

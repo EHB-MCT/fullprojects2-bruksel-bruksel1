@@ -1,15 +1,19 @@
-﻿async function loadRandomPhotos() {
+﻿/*De functie zoekt een HTML-element met de id "random-photos-grid" en stopt meteen als dat element niet bestaat.*/
+async function loadRandomPhotos() {
   const randomPhotosGrid = document.getElementById("random-photos-grid");
   if (!randomPhotosGrid) {
     return;
   }
 
+  /*Deze code probeert een JSON-bestand op te halen via fetch, en geeft een foutmelding als het laden mislukt.*/
   try {
     const response = await fetch("/Website_Bruksel1/JSON/datafotos.json");
     if (!response.ok) {
       throw new Error("Kon datafotos.json niet laden");
     }
 
+    /*Deze code zet de opgehaalde data om naar JSON en controleert of het een niet-lege array is, 
+    anders toont ze een melding dat er geen foto’s beschikbaar zijn en stopt de functie.*/
     const photos = await response.json();
     if (!Array.isArray(photos) || photos.length === 0) {
       randomPhotosGrid.innerHTML =
@@ -17,7 +21,11 @@
       return;
     }
 
+    /*Deze code maakt een kopie van de foto’s en zet ze in een willekeurige volgorde (shuffle).*/
     const shuffled = photos.slice().sort(() => Math.random() - 0.5);
+
+    /*Deze code neemt de eerste 6 willekeurige foto’s 
+    en zet ze als HTML-kaarten in de pagina met een afbeelding en link naar de fotodetailpagina.*/
     const selected = shuffled.slice(0, 6);
     randomPhotosGrid.innerHTML = selected
       .map((photo) => {
@@ -29,12 +37,15 @@
           </article>
         `;
       })
+
+      /*Als er een fout optreedt bij het laden van de foto’s, toont deze code een foutmelding op de pagina met de reden van de fout.*/
       .join("");
   } catch (error) {
     randomPhotosGrid.innerHTML = `<p class="no-photos">Fout bij laden van foto\'s: ${error.message}</p>`;
   }
 }
 
+/*Deze functie zorgt ervoor dat wanneer je op de knop klikt, de functie loadRandomPhotos wordt uitgevoerd om willekeurige foto’s te laden.*/
 function initRandomPhotos() {
   const randomPhotosButton = document.getElementById("load-random-photos");
   if (randomPhotosButton) {
@@ -42,9 +53,10 @@ function initRandomPhotos() {
   }
 }
 
+/*Deze code zorgt ervoor dat initRandomPhotos automatisch wordt uitgevoerd zodra de HTML-pagina volledig geladen is.*/
 document.addEventListener("DOMContentLoaded", initRandomPhotos);
 
-/*laad fotos per gemeente & jaar*/
+/*Laad foto's per gemeente & jaar*/
 document.addEventListener("DOMContentLoaded", () => {
   const pathname = window.location.pathname.toLowerCase();
   const breadcrumbCurrent = document.querySelector(
@@ -64,6 +76,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+/*Deze functie probeert foto’s op te halen uit een JSON-bestand en zet ze klaar voor een galerij, 
+maar toont een foutmelding en stopt als het laden mislukt of als de galerij niet bestaat.*/
 async function initGemeenteGallery(gemeenteName) {
   const gallery = document.querySelector(".anderlecht-gallery");
   const yearItems = Array.from(document.querySelectorAll(".year-item"));
@@ -80,7 +94,7 @@ async function initGemeenteGallery(gemeenteName) {
     return;
   }
 
-  //filter enkel fotos van de gemeente
+  /*Filter enkel fotos van de gemeente*/
   const gemeentePhotos = allPhotos.filter(
     (p) => (p.location || "").toLowerCase() === gemeenteName.toLowerCase(),
   );
@@ -90,7 +104,8 @@ async function initGemeenteGallery(gemeenteName) {
   let currentPage = 0;
   let currentFiltered = gemeentePhotos.slice();
 
-  // create or reuse controls container
+  /*Deze code zoekt een bestaande controlebalk voor de galerij 
+  en maakt er één aan met vorige/volgende knoppen en paginainfo als die nog niet bestaat.*/
   let controlsContainer = document.querySelector(".gallery-controls");
   if (!controlsContainer) {
     controlsContainer = document.createElement("div");
@@ -104,7 +119,9 @@ async function initGemeenteGallery(gemeenteName) {
       <span class="gallery-pageinfo"></span>
       <button class="gallery-next" aria-label="Volgende">→</button>
     `;
-    // insert controls after the whole gallery section when possible so they span the page
+
+    /*Deze code plaatst de galerij-navigatie (knoppen en info) in de pagina, 
+    ofwel direct na de galerijsectie of anders direct na de galerij zelf als die sectie niet bestaat.*/
     const gallerySection = gallery.closest(".anderlecht-gallery-section");
     if (gallerySection && gallerySection.parentNode) {
       gallerySection.parentNode.insertBefore(
@@ -116,10 +133,14 @@ async function initGemeenteGallery(gemeenteName) {
     }
   }
 
+  /*Deze code haalt de vorige-knop, volgende-knop en de paginainfo-elementen 
+  op uit de galerijbedieningen zodat ze later gebruikt kunnen worden.*/
   const btnPrev = controlsContainer.querySelector(".gallery-prev");
   const btnNext = controlsContainer.querySelector(".gallery-next");
   const pageInfo = controlsContainer.querySelector(".gallery-pageinfo");
 
+  /*Deze functie zorgt ervoor dat de galerij wordt weergegeven met de opgegeven foto's, 
+  en toont een foutmelding als er geen foto's beschikbaar zijn.*/
   function render(list) {
     if (!list || list.length === 0) {
       gallery.innerHTML =
@@ -129,6 +150,8 @@ async function initGemeenteGallery(gemeenteName) {
       return;
     }
 
+    /*Deze code berekent hoeveel pagina’s er zijn, zorgt dat de huidige pagina binnen de grenzen blijft 
+    en selecteert vervolgens de juiste subset van items voor die pagina.*/
     const total = list.length;
     const totalPages = Math.ceil(total / pageSize);
     if (currentPage < 0) currentPage = 0;
@@ -136,6 +159,8 @@ async function initGemeenteGallery(gemeenteName) {
     const start = currentPage * pageSize;
     const pageSlice = list.slice(start, start + pageSize);
 
+    /*Deze code toont de huidige pagina met foto’s in de galerij, en past de navigatie 
+    (knoppen en paginanummering) aan of verbergt die als er maar één pagina is.*/
     gallery.innerHTML = pageSlice
       .map(
         (photo) => `
@@ -157,7 +182,8 @@ async function initGemeenteGallery(gemeenteName) {
     }
   }
 
-  // begrijpen van de filters = 1960 - ...
+  /*Deze code zorgt voor het parseren van een jaartalbereik uit een tekst, 
+  en retourneert een object met start- en eindjaar of null als het niet kan worden geïnterpreteerd.*/
   function parseRange(text) {
     const t = (text || "").trim();
     if (/alle jaren/i.test(t)) return null;
@@ -176,6 +202,8 @@ async function initGemeenteGallery(gemeenteName) {
     return null;
   }
 
+  /*Deze functie controleert of het jaar van een foto binnen een opgegeven tijdsperiode valt en 
+  geeft true of false terug afhankelijk van die match.*/
   function inRange(photo, range) {
     if (!range) return true;
     const year = parseInt(
@@ -190,7 +218,8 @@ async function initGemeenteGallery(gemeenteName) {
     return true;
   }
 
-  // attach handlers to filter items
+  /*Deze code koppelt klikhandlers aan de filteritems zodat ze kunnen worden gebruikt
+   om de foto's te filteren op basis van het geselecteerde jaartalbereik.*/
   yearItems.forEach((item) => {
     item.addEventListener("click", (e) => {
       e.preventDefault();
