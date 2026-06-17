@@ -39,9 +39,9 @@ main {
 
 .chart-container .chart-brussel {
   position: relative;
-  width: 670px;
-  height: 610px;
-  padding: 5%;
+  width: 700px;
+  height: 710px;
+  padding: 2%;
   z-index: 2;
 }
 
