@@ -76,6 +76,15 @@ main {
   justify-items: center;
 }
 
+.show-chart {
+  grid-column: 1 / 13;
+  width: 100%;
+  display: grid;
+  gap: 24px;
+  background-color: #f4f9f2;
+  justify-items: center;
+}
+
 .random-photos-grid {
 	width: 100%;
 	max-width: 1200px;
