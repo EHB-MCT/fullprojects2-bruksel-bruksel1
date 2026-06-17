@@ -236,11 +236,20 @@ header {
 }
 
 h1 {
+<<<<<<< HEAD
   color: #0b8f49;
   text-align: center;
   font-size: 42px;
   margin-left: auto;
   margin-right: auto;
+=======
+	color: #0b8f49;
+
+	text-align: center;
+	font-size: 42px;
+	margin-left: auto;
+	margin-right: auto;
+>>>>>>> 102c1ae07cf436af054a276fa3036fab6ef5a101
 }
 
 h2 {
