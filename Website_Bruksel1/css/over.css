@@ -1,31 +1,32 @@
 .container {
-  width: 85%;
-  max-width: 1200px;
-  margin: 0 auto;
+	width: 85%;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 .intro {
-  background-size: cover;
-  background-position: center;
-  height: 60vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(0, 0, 0, 0.4);
-  background-blend-mode: overlay;
+	background-size: cover;
+	background-position: center;
+	height: 60vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.4);
+	background-blend-mode: overlay;
 }
 
 .wrapper {
-  width: 100%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  position: relative;
+	width: 100%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	position: relative;
 }
 body {
-  margin: 0;
-  padding: 0;
-  font-family: "Nexa", Helvetica, sans-serif, sans-serif;
+	margin: 0;
+	padding: 0;
+	font-family: "Nexa", Helvetica, sans-serif, sans-serif;
+	background-color: #f4f9f2;
 }
 /* #grid {
 	position: absolute;
@@ -42,65 +43,74 @@ body {
 */
 
 header {
+<<<<<<< HEAD
   grid-column: 1 / 13;
   height: 100px;
   background-color: #078c3c;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+=======
+	grid-column: 1 / 13;
+	height: 100px;
+	background-color: #4dc02a;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+>>>>>>> 1db2cc8cf00d2a80ca341e6df761967a4391d19e
 }
 .logo-nav {
-  grid-column: 4/ 5;
-  align-items: center;
-  height: 100px;
+	grid-column: 4/ 5;
+	align-items: center;
+	height: 100px;
 }
 .logo-nav img {
-  height: 100px;
+	height: 100px;
 }
 
 .nav-home {
-  grid-column: 5 / 13;
-  height: 100px;
-  align-content: center;
-  justify-content: center;
+	grid-column: 5 / 13;
+	height: 100px;
+	align-content: center;
+	justify-content: center;
 }
 
 .nav-home ul {
-  margin: 0;
-  padding-right: 200px;
+	margin: 0;
+	padding-right: 200px;
 }
 
 .nav-home ul li {
-  display: inline;
-  padding-left: 10px;
+	display: inline;
+	padding-left: 10px;
 }
 .nav-home ul li a {
-  padding: 30px;
-  text-decoration: none;
-  color: #fff;
+	padding: 30px;
+	text-decoration: none;
+	color: #fff;
 }
 
 h1 {
-  color: #fff;
-  text-align: center;
-  font-size: 42px;
-  margin-top: 20px;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
+	color: #fff;
+	text-align: center;
+	font-size: 42px;
+	margin-top: 20px;
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 h2 {
-  color: #fff;
-  text-align: center;
-  font-size: 18px;
-  margin-top: 10px;
-  padding: 0 1.5rem;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+	margin-top: 10px;
+	padding: 0 1.5rem;
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .intro {
+<<<<<<< HEAD
   background-size: cover;
   background-position: center;
   height: 60vh;
@@ -112,155 +122,168 @@ h2 {
   border-bottom: 50px solid #078c3c;
   text-align: center;
   padding: 0 2rem;
+=======
+	background-size: cover;
+	background-position: center;
+	height: 60vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.4);
+	background-blend-mode: overlay;
+	border-bottom: 50px solid #0bde5f;
+	text-align: center;
+	padding: 0 2rem;
+>>>>>>> 1db2cc8cf00d2a80ca341e6df761967a4391d19e
 }
 
 .intro .test {
-  max-width: 1000px;
-  width: 100%;
+	max-width: 1000px;
+	width: 100%;
 }
 
 .contact {
-  grid-column: 4/7;
-  align-content: center;
-  justify-content: center;
+	grid-column: 4/7;
+	align-content: center;
+	justify-content: center;
 }
 
 .adres {
-  grid-column: 8/11;
+	grid-column: 8/11;
 }
 
 .contact-ons {
-  font-weight: 900;
-  text-align: left;
-  padding-bottom: 20px;
+	font-weight: 900;
+	text-align: left;
+	padding-bottom: 20px;
 }
 
 .secretariat,
 .Vrienden,
 .gids,
 .bestuur {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px 32px;
-  margin-bottom: 40px;
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 18px 32px;
+	margin-bottom: 40px;
 }
 
 .secretariat > h3,
 .Vrienden > h3,
 .gids > h3,
 .bestuur > h3 {
-  grid-column: 1 / -1;
-  margin-bottom: 16px;
+	grid-column: 1 / -1;
+	margin-bottom: 16px;
 }
 
 .secretariat p,
 .Vrienden p,
 .gids p,
 .bestuur p {
-  margin: 0 0 10px;
-  line-height: 1.6;
+	margin: 0 0 10px;
+	line-height: 1.6;
 }
 
 .section-title {
-  color: #078c3c;
-  font-size: 42px;
-  text-align: center;
-  margin-top: 60px;
-  margin-bottom: 50px;
-  text-transform: uppercase;
-  font-weight: 900;
+	color: #078c3c;
+	font-size: 42px;
+	text-align: center;
+	margin-top: 60px;
+	margin-bottom: 50px;
+	text-transform: uppercase;
+	font-weight: 900;
 }
 
 .team-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  margin-bottom: 80px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 30px;
+	margin-bottom: 80px;
 }
 
 .team-card {
-  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.05);
-  border: 2px solid #c8e8d0;
-  border-radius: 50px;
-  padding: 40px 30px;
-  text-align: left;
-  background-color: #ffffff;
+	box-shadow: 0 16px 35px rgba(0, 0, 0, 0.05);
+	border: 2px solid #c8e8d0;
+	border-radius: 50px;
+	padding: 40px 30px;
+	text-align: left;
+	background-color: #ffffff;
 }
 
 .team-card h3 {
-  color: #078c3c;
-  font-weight: 900;
-  font-size: 24px;
-  margin-top: 0;
-  margin-bottom: 25px;
-  text-transform: uppercase;
+	color: #078c3c;
+	font-weight: 900;
+	font-size: 24px;
+	margin-top: 0;
+	margin-bottom: 25px;
+	text-transform: uppercase;
 }
 
 .team-card h3.margin-top {
-  margin-top: 50px;
+	margin-top: 50px;
 }
 
 .team-card p {
-  color: #000000;
-  font-size: 15px;
-  line-height: 1.2;
-  margin: 6px 0;
+	color: #000000;
+	font-size: 15px;
+	line-height: 1.2;
+	margin: 6px 0;
 }
 
 .team-card:first-child p {
-  margin-bottom: 18px;
+	margin-bottom: 18px;
 }
 
 .team-card:first-child h3.margin-top ~ p {
-  margin-bottom: 4px;
+	margin-bottom: 4px;
 }
 
 .gidsen-list {
-  column-count: 2;
-  column-gap: 15px;
+	column-count: 2;
+	column-gap: 15px;
 }
 
 .gidsen-list p {
-  margin: 4px 0;
-  break-inside: avoid;
+	margin: 4px 0;
+	break-inside: avoid;
 }
 
 .green-divider {
-  width: 100%;
-  height: 50px;
-  background-color: #078c3c;
+	width: 100%;
+	height: 50px;
+	background-color: #078c3c;
 }
 
 .text-content {
-  text-align: left;
-  margin-bottom: 80px;
+	text-align: left;
+	margin-bottom: 80px;
 }
 
 .text-content h2 {
-  color: #078c3c;
-  font-size: 38px;
-  margin-top: 50px;
-  margin-bottom: 15px;
-  text-transform: uppercase;
-  font-weight: 900;
-  text-align: left;
-  padding: 0;
+	color: #078c3c;
+	font-size: 38px;
+	margin-top: 50px;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+	font-weight: 900;
+	text-align: left;
+	padding: 0;
 }
 
 .text-content p {
-  color: #000000;
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 10px;
-  font-weight: 400;
+	color: #000000;
+	font-size: 16px;
+	line-height: 1.5;
+	margin-bottom: 10px;
+	font-weight: 400;
 }
 
 .section-title,
 .team-grid,
 .text-content,
 .infobox-vacature {
-  width: 85%;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+	width: 85%;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
 }
